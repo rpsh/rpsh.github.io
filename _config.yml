@@ -24,7 +24,7 @@ instagram_username: rpsh
 
 # Build settings
 highlighter: pygments
-permalink: pretty
+permalink: /posts/:year/:month/:day/:title
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
