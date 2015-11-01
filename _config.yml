@@ -21,6 +21,7 @@ instagram_username: rpsh
 
 
 
+
 # Build settings
 highlighter: pygments
 #permalink: pretty
@@ -49,7 +50,9 @@ markdown: redcarpet
 disqus_username: rpsh
 
 
-
+#sitemap
+gems:
+  - jekyll-sitemap
 
 # Analytics settings
 # Baidu Analytics
