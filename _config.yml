@@ -8,7 +8,7 @@ keyword: "任平生, 互联网, 前端"
 url: "http://note.rpsh.net"
 baseurl: ""
 timezone: Asia/Shanghai
-
+feedurl: "http://feeds.rpsh.net/rpsh/note"
 
 # SNS settings
 RSS: true
