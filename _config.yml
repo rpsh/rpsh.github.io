@@ -1,0 +1,81 @@
+# Site settings
+title: 任平生的学习笔记
+SEOTitle: 任平生的学习笔记 | RPSH's Notes
+header-img: "assets/common/home-bg.jpg"
+email: myrpsh@gmail.com
+description: "滴水石板"
+keyword: "任平生, 互联网, 前端"
+url: "http://note.rpsh.net"
+baseurl: ""
+
+
+
+# SNS settings
+RSS: true
+#weibo_username:     huxpro
+zhihu_username:     rpsh
+github_username:    rpsh
+twitter_username:   rpsh
+instagram_username: rpsh
+#facebook_username:  haiyang
+
+
+
+# Build settings
+highlighter: pygments
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: redcarpet
+#kramdown:
+#  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Duoshuo settings
+#duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+disqus_username: rpsh
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-5528027-2'            # Format: UA-xxxxxx-xx
+ga_domain: note.rpsh.net
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "探寻代码与生活之外的生活"
+sidebar-avatar: "/assets/common/avatar-rpsh.jpg"     # use absolute URL.
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "任平生",
+        href: "http://rpsh.net/"
+    }
+]
