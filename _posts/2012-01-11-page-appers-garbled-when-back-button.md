@@ -3,9 +3,11 @@ layout: post
 title: 'IE 中按后退按钮页面乱码的解决方案'
 date: 2012-01-11 10:40
 comments: true
+header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
     - IE
+    - JS
 ---
 
 

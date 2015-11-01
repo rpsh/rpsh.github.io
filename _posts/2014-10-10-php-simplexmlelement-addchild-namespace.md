@@ -3,6 +3,7 @@ layout: post
 title: 'PHP SimpleXMLElement 添加带 Namespace 的节点'
 date: 2014-10-10 14:46
 comments: true
+header-img: "assets/common/php-bg.jpg"
 author:     "任平生"
 tags:
     - PHP

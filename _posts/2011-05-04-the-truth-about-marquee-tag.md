@@ -3,7 +3,8 @@ layout: post
 title: '有关 &lt;marquee&gt; 标签的一些现实'
 date: 2011-05-04 07:28
 comments: true
-categories: 
+header-img: "assets/common/html-bg.jpg"
+author:     "任平生"
 tags:
     - HTML
     - 有趣的事实

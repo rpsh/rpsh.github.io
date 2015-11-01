@@ -8,7 +8,6 @@ keyword: "任平生, 互联网, 前端"
 url: "http://note.rpsh.net"
 baseurl: ""
 timezone: Asia/Shanghai
-permalink: /posts/:year/:month/:day/:title
 
 
 # SNS settings
@@ -24,7 +23,8 @@ instagram_username: rpsh
 
 # Build settings
 highlighter: pygments
-permalink: /posts/:year/:month/:day/:title
+#permalink: pretty
+permalink: /posts/:year/:month/:day/:title/
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`

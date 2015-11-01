@@ -4,7 +4,7 @@ title: '解决升级 Yosemite 后， web server 不工作的问题'
 date: 2014-07-31 03:35
 comments: true
 author:     "任平生"
-header-img: "assets/common/js-bg.jpg"
+header-img: "assets/common/server-bg.jpg"
 tags:
     - Apache
     - OSX

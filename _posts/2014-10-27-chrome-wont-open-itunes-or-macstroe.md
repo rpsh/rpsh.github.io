@@ -3,6 +3,7 @@ layout: post
 title: '解决 Chrome 不能打开 iTunes 或 Mac Appstore'
 date: 2014-10-27 02:34
 comments: true
+header-img: "assets/common/chrome-bg.jpg"
 author:     "任平生"
 tags:
     - Chrome

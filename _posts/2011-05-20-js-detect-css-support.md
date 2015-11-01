@@ -3,7 +3,8 @@ layout: post
 title: '判断浏览器是否支持某个css属性'
 date: 2011-05-20 10:14
 comments: true
-categories: 
+header-img: "assets/common/js-bg.jpg"
+author:     "任平生"
 tags:
     - JS
     - 浏览器

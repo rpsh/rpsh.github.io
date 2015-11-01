@@ -3,7 +3,7 @@ layout: post
 title: '浏览器渲染模式'
 date: 2011-04-14 08:44
 comments: true
-categories: 
+author:     "任平生"
 tags:
     - 浏览器
     - 渲染模式

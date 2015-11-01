@@ -3,6 +3,7 @@ layout: post
 title: 'GoAgentX Shadowsocks 通过 HTTP 代理连接'
 date: 2014-10-20 05:01
 comments: true
+header-img: "assets/common/greatwall-bg.jpg"
 author:     "任平生"
 tags:
     - GoAgentX

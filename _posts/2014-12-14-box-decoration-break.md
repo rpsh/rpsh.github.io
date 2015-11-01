@@ -3,6 +3,7 @@ layout: post
 title: 'box-decoration-break 定义换行元素样式'
 date: 2014-12-14 13:22
 comments: true
+header-img: "assets/common/css3-bg.jpg"
 author:     "任平生"
 tags:
     - CSS3

@@ -3,6 +3,7 @@ layout: post
 title: 'HTML 注释的前世今生'
 date: 2011-12-08 07:50
 comments: true
+header-img: "assets/common/html-bg.jpg"
 author:     "任平生"
 tags:
     - HTML

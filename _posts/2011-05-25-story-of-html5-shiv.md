@@ -3,7 +3,8 @@ layout: post
 title: 'HTML5 Shiv 的一些趣事'
 date: 2011-05-25 03:15
 comments: true
-categories: 
+header-img: "assets/common/html5-bg.jpg"
+author:     "任平生"
 tags:
     - HTML5
     - 趣识

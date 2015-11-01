@@ -4,7 +4,7 @@ title: '纯CSS实现多行文本截断并有省略号'
 date: 2014-10-14 06:35
 comments: true
 author:     "任平生"
-header-img: "assets/common/js-bg.jpg"
+header-img: "assets/common/css3-bg.jpg"
 tags:
     - CSS
     - CSS/ellipsis

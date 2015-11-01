@@ -3,7 +3,8 @@ layout: post
 title: '设置 Chrome 强制网站使用 HTTPS'
 date: 2011-04-19 08:19
 comments: true
-categories: 
+header-img: "assets/common/chrome-bg.jpg"
+author:     "任平生"
 tags:
     - Chrome
     - https

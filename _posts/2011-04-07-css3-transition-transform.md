@@ -3,11 +3,12 @@ layout: post
 title: 'CSS3: transition transform 学习笔记'
 date: 2011-04-07 03:35
 comments: true
-categories: 
+header-img: "assets/common/css3-bg.jpg"
+author:     "任平生"
 tags:
     - CSS3
-    - transition
-    - transform
+    - CSS/transition
+    - CSS/transform
 ---
 
 ```

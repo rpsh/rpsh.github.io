@@ -3,7 +3,8 @@ layout: post
 title: 'javascript keycodes 键盘键值'
 date: 2011-06-08 09:59
 comments: true
-categories: 
+header-img: "assets/common/js-bg.jpg"
+author:     "任平生"
 tags:
     - JS
     - Keyboard

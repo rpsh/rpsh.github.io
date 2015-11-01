@@ -3,6 +3,7 @@ layout: post
 title: '解决 iPhone AirDrop 找不到 Mac'
 date: 2015-07-16 13:25
 comments: true
+header-img: "assets/common/iphone-bg.jpg"
 author:     "任平生"
 tags:
     - iPhone

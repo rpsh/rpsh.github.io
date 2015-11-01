@@ -4,7 +4,6 @@ title: 'synergy: 一套键鼠控制多台 Mac 与 Windows'
 date: 2014-09-23 06:17
 comments: true
 author:     "任平生"
-header-img: "assets/common/js-bg.jpg"
 tags:
     - Soft
     - synergy

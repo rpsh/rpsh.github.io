@@ -3,7 +3,8 @@ layout: post
 title: 'window.history'
 date: 2011-05-18 10:18
 comments: true
-categories: 
+header-img: "assets/common/js-bg.jpg"
+author:     "任平生"
 tags:
     - JS
     - JS/history

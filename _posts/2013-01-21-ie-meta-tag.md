@@ -3,6 +3,7 @@ layout: post
 title: '一些神奇的 IE Meta Tags'
 date: 2013-01-21 15:41
 comments: true
+header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
     - IE

@@ -3,7 +3,8 @@ layout: post
 title: 'ie8 的 hasLayout'
 date: 2011-05-20 10:09
 comments: true
-categories: 
+header-img: "assets/common/ie-bg.jpg"
+author:     "任平生"
 tags:
     - IE
     - hasLayout

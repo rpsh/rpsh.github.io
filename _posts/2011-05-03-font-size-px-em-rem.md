@@ -3,9 +3,10 @@ layout: post
 title: 'font-size 的 px em 与 rem 的区别'
 date: 2011-05-03 08:25
 comments: true
-categories: 
+header-img: "assets/common/css-bg.jpg"
+author:     "任平生"
 tags:
-    - CSS3
+    - CSS
     - CSS/rem
 ---
 

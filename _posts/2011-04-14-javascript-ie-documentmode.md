@@ -3,9 +3,11 @@ layout: post
 title: 'javascript: 判断 IE 的渲染模式 及 判断浏览器标准渲染模式的方法'
 date: 2011-04-14 06:34
 comments: true
-categories: 
+header-img: "assets/common/ie-bg.jpg"
+author:     "任平生"
 tags:
     - JS
+    - 浏览器
     - 渲染模式
 ---
 

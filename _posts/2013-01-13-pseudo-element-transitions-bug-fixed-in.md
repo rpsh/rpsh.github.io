@@ -3,10 +3,12 @@ layout: post
 title: 'Chrome(Webkit)中伪元素不支持动画的bug修复了'
 date: 2013-01-13 15:05
 comments: true
+header-img: "assets/common/chrome-bg.jpg"
 author:     "任平生"
 tags:
     - Chrome
     - Chrome/bug
+    - CSS
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: 'IE10 的 HTML5 怪异模式'
 date: 2011-12-15 16:02
 comments: true
+header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
     - IE10

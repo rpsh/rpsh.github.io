@@ -3,8 +3,8 @@ layout: post
 title: '自定义有序列表 li 项目符号的数字样式'
 date: 2011-05-27 09:07
 comments: true
-categories: 
-
+header-img: "assets/common/css-bg.jpg"
+author:     "任平生"
 tags:
     - CSS
 ---

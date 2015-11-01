@@ -4,7 +4,7 @@ title: '微信 webview 清理缓存方法'
 date: 2014-04-15 12:20
 comments: true
 author:     "任平生"
-header-img: "assets/common/js-bg.jpg"
+header-img: "assets/common/wechat-bg.jpg"
 tags:
     - 微信
     - 移动开发

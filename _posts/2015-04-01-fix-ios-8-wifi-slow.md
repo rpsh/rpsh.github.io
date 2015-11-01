@@ -3,6 +3,7 @@ layout: post
 title: '解决 iPhone 升级 iOS 8.2 Wifi 很慢的问题'
 date: 2015-04-01 14:30
 comments: true
+header-img: "assets/common/iphone-bg.jpg"
 author:     "任平生"
 tags:
     - iPhone

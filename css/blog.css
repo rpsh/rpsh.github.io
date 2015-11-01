@@ -142,6 +142,9 @@ pre,
     width: 500px;
   }
 }
+.post-container{
+  word-wrap: break-word;
+}
 .post-container a {
   color: #337ab7;
 }
@@ -215,6 +218,8 @@ pre,
     width: 170px;
     float: right;
     margin: 0px;
+    overflow: hidden;
+    height: 0;
   }
   #huxblog_navbar {
     opacity: 0;
@@ -530,6 +535,7 @@ pre,
   font-size: 13px;
   font-style: italic;
   color: #a3a3a3;
+  word-wrap: break-word;
 }
 .post-content-preview:hover {
   color: #0085a1;
@@ -868,27 +874,30 @@ body {
   margin-top: 3px;
 }
 /* Hux customize Style for Duoshuo */
-.comment #ds-thread {
+.post-comment{
   margin-top: 20px;
 }
-.comment #ds-thread #ds-reset a.ds-like-thread-button {
+.post-comment #ds-thread {
+  margin-top: 20px;
+}
+.post-comment #ds-thread #ds-reset a.ds-like-thread-button {
   border: 1px solid #ddd;
   border-radius: 0px;
   background: white;
   box-shadow: none;
   text-shadow: none;
 }
-.comment #ds-thread #ds-reset li.ds-tab a.ds-current {
+.post-comment #ds-thread #ds-reset li.ds-tab a.ds-current {
   border: 1px solid #ddd;
   border-radius: 0px;
   background: white;
   box-shadow: none;
   text-shadow: none;
 }
-.comment #ds-thread #ds-reset .ds-textarea-wrapper {
+.post-comment #ds-thread #ds-reset .ds-textarea-wrapper {
   background: none;
 }
-.comment #ds-thread #ds-reset .ds-gradient-bg {
+.post-comment #ds-thread #ds-reset .ds-gradient-bg {
   background: none;
 }
 #ds-smilies-tooltip ul.ds-smilies-tabs li a {

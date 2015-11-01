@@ -3,9 +3,11 @@ layout: post
 title: '移除 IE10 input 输入框上的清除按钮'
 date: 2013-01-09 08:19
 comments: true
+header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
     - CSS
+    - IE
 ---
 
 

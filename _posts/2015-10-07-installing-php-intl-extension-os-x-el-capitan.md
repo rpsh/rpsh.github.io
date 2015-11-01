@@ -3,6 +3,7 @@ layout: post
 title: 'Mac OS X 安装 PHP intl 扩展'
 date: 2015-10-07 10:26
 comments: true
+header-img: "assets/common/php-bg.jpg"
 author:     "任平生"
 tags:
     - OSX
