@@ -81,6 +81,19 @@ layout: default
 				col-xs-12
 				sidebar-container
 			">
+				<!-- Search -->
+				{% if site.googlesearch %}
+				<section>
+					<!-- no hr -->
+					<h5><a href="/search/">Search</a></h5>
+					<div class="search">
+						<form class="search-form" action="/search/">
+							<input type="search" name="q" class="search-input" placeholder="善用搜索...">
+						</form>
+					</div>
+				</section>
+				{% endif %}
+
 				<!-- Featured Tags -->
 				{% if site.featured-tags %}
 				<section>

@@ -1,0 +1,76 @@
+---
+title: Search
+layout: default
+search-placeholder: "善用搜索..."
+header-img: "assets/common/home-bg.jpg"
+permalink: search/
+---
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading" id="tag-heading">
+					<h1 id="search-keywords">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+					<span class="subheading">{{ page.description }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<div class="page-search">
+				<script>
+				(function() {
+					var cx = '{{ site.googlesearch-id }}';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+// google search callback
+window.__gcse ={
+	callback: cesCallback
+}
+function cesCallback(){
+	// 设置 placeholer
+	var gscInput = document.getElementById('gsc-i-id1');
+	gscInput.setAttribute('placeholder','{{ page.search-placeholder }}');
+	gscInput.setAttribute('autocomplete','on');
+
+	// 进入搜索
+	gscInput.addEventListener('keydown',function(e){
+		var key = e.which || e.keyCode;
+		if (key === 13) { // 13 is enter
+			document.getElementById('search-keywords').innerHTML = '{' + document.getElementById('gsc-i-id1').value + '}';
+		}
+		
+	})
+}
+
+// url query
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+if( getParameterByName('q') ){
+	document.getElementById('search-keywords').innerHTML = '{' + getParameterByName('q') + '}';
+}
+</script>

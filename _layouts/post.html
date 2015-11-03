@@ -105,6 +105,14 @@ layout: default
 
 			</div>
 
+			
+		</div>
+	</div>
+</article>
+
+<aside class="search-footer">
+	<div class="container">
+		<div class="row">
 			<!-- Sidebar Container -->
 			<div class="
 				col-lg-8 col-lg-offset-2
@@ -138,10 +146,23 @@ layout: default
 					{% endfor %}
 				</ul>
 				{% endif %}
-			</div>
-		</div>
+
+				<!-- Search Page -->
+				{% if site.googlesearch %}
+				<hr>
+				<h5><a href="/search/">Search</a></h5>
+				<div class="search">
+					<form class="search-form" action="/search/">
+						<input type="search" name="q" class="search-input" placeholder="善用搜索...">
+					</form>
+				</div>
+				{% endif %}	
+
+			</div>	
+		</div>	
 	</div>
-</article>
+	
+</aside>
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
