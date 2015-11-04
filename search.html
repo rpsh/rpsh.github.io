@@ -1,7 +1,6 @@
 ---
 title: Search
 layout: default
-search-placeholder: "善用搜索..."
 header-img: "assets/common/home-bg.jpg"
 permalink: search/
 ---
@@ -25,19 +24,213 @@ permalink: search/
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<div class="page-search">
-				<div class="google-search">
-					<gcse:search></gcse:search>	
-				</div>
-				<div class="baidu-search">
-					<div class="bdcs-frame-box" id="bdcs-frame-box"></div>
-				</div>
+				{% if site.custom-search %}
+					<!-- 自定义搜索 start -->
+					<div class="google-search" id="google-search">
+						<gcse:search></gcse:search>	
+					</div>
+					<div class="baidu-search">
+						<div class="bdcs-frame-box" id="bdcs-frame-box"></div>
+					</div>
+					<!-- 自定义搜索 end -->
+				{% else %}
+					<!-- 跳转到搜索引擎去 start -->
+					<div class="page-search-external">
+					{% if site.search-engine == 'google' %}
+						<form id="search-form" target="_blank" method="get" class="search-form" action="https://www.google.com/search">
+							<input type="search" name="q" class="search-input" placeholder="{{ site.search-placeholder }}">
+							<input type="hidden" name="sitesearch" value="{{ site.url }}">
+							<script>
+							if(navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+								/* fix iOS 系统禁止新窗口提交表单 */
+								document.getElementById('search-form').removeAttribute('target');
+							}
+							</script>
+						</form>
+					{% else %}
+						<form id="search-form" target="_blank" method="get" class="search-form" action="https://www.baidu.com/baidu">
+							<input type="search" name="word" class="search-input" placeholder="{{ site.search-placeholder }}">
+							<input type="hidden" name="si" value="{{ site.url }}">
+							<input type="hidden" name="tn" value="bds">
+							<input type="hidden" name="cl" value="3">
+							<input type="hidden" name="ct" value="2097152">
+							<script>
+								var siInput = document.getElementsByName('si')[0];
+								var searchInput = document.getElementsByName('word')[0];
+								var searchForm = document.getElementById('search-form');
+
+								siInput.value = siInput.value.replace('http://','');
+
+								searchForm.addEventListener('submit',function(e){
+									if(navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+										/* fix iOS 系统禁止新窗口提交表单 */
+										 searchForm.removeAttribute('target');
+									}
+									searchInput.value += ' '+siInput.value;
+
+									setTimeout(function(){
+										searchInput.value = searchInput.value.replace(' '+siInput.value, '');
+									},1)
+								}, false)
+							</script>
+						</form>
+					{% endif %}
+					<!-- 跳转到搜索引擎去 end -->
+					</div>				
+				{% endif %}
+				
 			</div>
 		</div>
 	</div>
 </div>
 
-<style>
+<script>
+// url query
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	    results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+// 从搜索框进入，则修改页面头部 title
+if( getParameterByName('q') ){
+	var q = getParameterByName('q');
+	document.getElementById('search-keywords').innerHTML = '{' + q + '}';
+	document.title = q + ' - {{ site.title }}';
+}
+</script>
 
+
+{% if site.custom-search %}
+<!-- 自定义搜索 start -->
+	{% if site.google-search-id %}
+	<!-- Google 自定义搜索 start -->
+	<script>
+	(function() {
+		var cx = '{{ site.google-search-id }}';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+
+		// google search callback
+		window.__gcse ={
+			callback: cesCallback
+		}
+		function cesCallback(){
+			// 设置 placeholer
+			var gscInput = document.getElementById('gsc-i-id1');
+			gscInput.setAttribute('placeholder','{{ site.search-placeholder }}');
+			gscInput.setAttribute('autocomplete','on');
+
+			// 隐藏百度搜索
+			document.querySelectorAll('.baidu-search')[0].classList.add('hide')
+
+			// 搜索时，修改页面头部 title
+			gscInput.addEventListener('keydown',function(e){
+				var key = e.which || e.keyCode;
+				if (key === 13) { // 13 is enter
+					var keywords = document.getElementById('gsc-i-id1').value;
+					document.getElementById('search-keywords').innerHTML = '{' + keywords + '}';
+					document.title = keywords + ' - {{ site.title }}';
+				}
+				
+			})
+		}
+
+		gcse.onerror = function(){
+
+			{% if site.baidu-search-id %}
+			/* google search 加载失败，fallback 到百度 start */
+				var bdcs = document.createElement('script');
+				bdcs.type = 'text/javascript';
+				bdcs.async = true;
+				bdcs.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//zhannei.baidu.com/static/js/iframe.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(bdcs, s);
+
+				/* Baidu search 不支持 callback ，修改页面 title 统一为 Search */
+				document.getElementById('search-keywords').innerHTML = 'Search';
+				document.title = 'Search - {{ site.title }}';
+				
+			/* google search 加载失败，fallback 到百度 end */
+			{% else %}
+				/* 没有设置 baidu 的 fallback，则提供跳转到搜索引擎的链接 */
+				var searchBox = document.getElementById('google-search');
+				var q = getParameterByName('q');
+				var difficultyHTML =  '<div class="search-difficulty"> \
+									看起来你访问 Google 出现了困难，试试使用其他来进行站内搜索 :)  \
+									<p class="search-instead"> \
+										<a target="_blank" \
+											href="https://www.baidu.com/s?w=' + q + ' \
+													site:' + location.hostname + '">\
+											百度：\
+											<span class="hl">' + q + '</span>\
+										</a> / \
+										<a target="_blank" \
+											href="https://www.bing.com/search?q=' + q + ' \
+													site:' + location.hostname + '">\
+												Bing：\
+											<span class="hl">' + q + '</span>\
+										</a>\
+									</p>\
+								</div>';
+
+				searchBox.innerHTML = difficultyHTML;
+			{% endif %}
+		}
+		
+	})();
+	</script>
+	<!-- Google 自定义搜索 end -->
+	{% endif %}
+
+	{% if site.baidu-search-id %}
+	<!-- Baidu 自定义搜索 start -->
+	<script>
+		var bdcsFrameSid="{{ site.baidu-search-id }}";
+		var bdcsFrameCharset= "utf-8";
+		var bdcsFrameWidth = 700;
+		var bdcsFrameWt = 1;
+		var bdcsFrameHt = 2;
+		var bdcsFrameResultNum = 10;
+		var bdcsFrameBgColor = "#ffffff";
+
+		{% if site.google-search-id == null %}
+			/* 当只设置了百度搜索，加载百度搜索js start */
+			var bdcs = document.createElement('script');
+			bdcs.type = 'text/javascript';
+			bdcs.async = true;
+			bdcs.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//zhannei.baidu.com/static/js/iframe.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(bdcs, s);
+
+			document.getElementById('search-keywords').innerHTML = 'Search';
+			document.title = 'Search - {{ site.title }}';
+			/* 当只设置了百度搜索，加载百度搜索js end */
+		{% endif %}
+	</script>
+	<!-- Baidu 自定义搜索 end -->
+	{% endif %}
+
+
+<style>
+{% if site.google-search-id %}
+/* search difficulty */
+.search-difficulty{
+	margin: 40px auto;
+	text-align: center;
+	font-size: 26px;
+	color: #777;
+}
+.search-difficulty p{
+	color: #ddd;
+}
+.search-difficulty a{
+	margin: 0 10px;
+}
 /* google search */
 .page-search{
 	min-height: 200px;
@@ -47,6 +240,9 @@ permalink: search/
 }
 .page-search *:focus{
 	outline: none;
+}
+.page-search .gsc-control-cse{
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 .page-search .gsc-input-box{
 	position: relative;
@@ -85,13 +281,6 @@ permalink: search/
 	height: 38px;
 	vertical-align: top;
 }
-/*.page-search table.gsc-search-box .gsib_a:after{
-	content: '\5584\7528\641c\7d22\002e\002e\002e';
-	position: absolute;
-	left: 10px;
-	top: 0;
-	line-height: 40px;
-}*/
 .page-search .gsc-search-box .gsc-input{
 	padding-right: 0 !important;
 	text-align: center;
@@ -111,11 +300,6 @@ permalink: search/
 .page-search .gsc-result-info{
 	padding-left: 0;
 }
-/*.page-search .gsc-search-button input.gsc-search-button{
-	width: 100%;
-	height: 100%;
-	background: #3079ed url(http://www.google.com/uds/css/v2/search_box_icon.png) center center  no-repeat;
-}*/
 .page-search .gsc-selected-option-container{
 	width: auto !important;
 	max-width: none !important;
@@ -138,9 +322,6 @@ permalink: search/
 	text-decoration: none;
 }
 /* 搜索结果 */
-.page-search .gsc-control-cse{
-	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-}
 .page-search .gsc-result .gs-title{
 	height: auto;
 	text-decoration: none;
@@ -209,6 +390,7 @@ permalink: search/
 	font-size: 30px;
 	font-weight: normal;
 	border-radius: 100%;
+	cursor: pointer !important;
 }
 .page-search .gsc-results .gsc-cursor-box .gsc-cursor-page:hover{
 	text-decoration: none;
@@ -218,7 +400,7 @@ permalink: search/
 .page-search .gsc-results .gsc-cursor-box .gsc-cursor-page:focus{
 	outline: 0 none;
 }
-
+/* 搜索结果标题 */
 @media only screen and (min-width: 768px){
 	.page-search .gsc-control-cse .gs-result .gs-title,
 	.page-search .gsc-control-cse .gs-result .gs-title *{
@@ -233,6 +415,8 @@ permalink: search/
 	text-align: center;
 	color: #C03;
 }
+{% endif %}
+
 /* baidu search */
 .bdcs-frame-box,
 .bdcs-frame-box iframe{
@@ -242,7 +426,7 @@ permalink: search/
 }
 .bdcs-frame-box{
 	min-height: 200px;
-	margin-bottom: -100px;
+	margin-bottom: -120px;
 }
 .bdcs-frame-box:after{
 	content: '';
@@ -256,74 +440,10 @@ permalink: search/
 }
 footer{
 	position: relative;
+	z-index: 10;
 }
 </style>
 
-
-<script>
-(function() {
-	var cx = '{{ site.googlesearch-id }}';
-	var gcse = document.createElement('script');
-	gcse.type = 'text/javascript';
-	gcse.async = true;
-	gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(gcse, s);
-
-	// google search 加载失败，fallback 到百度
-	gcse.onerror = function(){
-
-		var bdcs = document.createElement('script');
-		bdcs.type = 'text/javascript';
-		bdcs.async = true;
-		bdcs.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//zhannei.baidu.com/static/js/iframe.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(bdcs, s);
-
-		document.getElementById('search-keywords').innerHTML = 'Search';
-	}
-})();
-</script>
-
-<script>
-	var bdcsFrameSid="{{ site.baidusearch-id }}";
-	var bdcsFrameCharset= "utf-8";
-	var bdcsFrameWidth = 700;
-	var bdcsFrameWt = 1;
-	var bdcsFrameHt = 2;
-	var bdcsFrameResultNum = 10;
-	var bdcsFrameBgColor = "#ffffff";
-</script>
-
-<script>
-// google search callback
-window.__gcse ={
-	callback: cesCallback
-}
-function cesCallback(){
-	// 设置 placeholer
-	var gscInput = document.getElementById('gsc-i-id1');
-	gscInput.setAttribute('placeholder','{{ page.search-placeholder }}');
-	gscInput.setAttribute('autocomplete','on');
-
-	// 进入搜索
-	gscInput.addEventListener('keydown',function(e){
-		var key = e.which || e.keyCode;
-		if (key === 13) { // 13 is enter
-			document.getElementById('search-keywords').innerHTML = '{' + document.getElementById('gsc-i-id1').value + '}';
-		}
-		
-	})
-}
-
-// url query
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-if( getParameterByName('q') ){
-	document.getElementById('search-keywords').innerHTML = '{' + getParameterByName('q') + '}';
-}
-</script>
+<!-- 自定义搜索 end -->
+	
+{% endif %}

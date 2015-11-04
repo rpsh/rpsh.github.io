@@ -74,11 +74,6 @@ sidebar-avatar: "/assets/common/avatar-rpsh.jpg"     # use absolute URL.
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
-# Custom Search 
-# search id:  http://cse.google.com
-googlesearch: true
-googlesearch-id: "001480698505182148536:zupx25rxeuc"
-baidusearch-id: "3051926431285584476"
 
 # Friends
 friends: [
@@ -91,3 +86,26 @@ friends: [
         href: "http://itluantan.com/"
     }
 ]
+
+
+# Site Search 
+search: true 							# whether or not using Search
+search-engine: google 					# google or baidu
+search-placeholder: '善用搜索..'			# placeholder of search input
+
+
+
+# Site Search 
+search: true                            # whether or not using Search
+search-engine: google                   # google or baidu
+search-placeholder: '善用搜索..'         # placeholder of search input
+
+# Custom Search
+# Get google custom search id->  http://cse.google.com
+# Get baidu custom search id->  http://zn.baidu.com
+custom-search: true                    # whether or not using custom search
+
+# If both google-search-id and baidu-search-id has been set,
+# the site search will fallback to Baidu when the visitor can't access Google
+#google-search-id: "001480698505182148536:zupx25rxeuc"
+baidu-search-id: "3051926431285584476"
