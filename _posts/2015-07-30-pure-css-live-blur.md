@@ -7,6 +7,7 @@ author:     "任平生"
 header-img: "assets/common/css3-bg.jpg"
 tags:
     - CSS3
+    - CSS
     - 毛玻璃
 ---
 目前在 Web 上实现毛玻璃效果一般是通过一个大截屏图片的高斯模糊加上滚动位置的切换来[实现](http://www.zhihu.com/question/30502281)，而在 iOS9 和 OS X 10.11 的 Safari 原生支持了 CSS 的 `backdrop-filter` 来实时地生成一个毛玻璃效果的背景。

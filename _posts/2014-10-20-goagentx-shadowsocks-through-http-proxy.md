@@ -1,19 +1,21 @@
 ---
 layout: post
-title: 'GoAgentX Shadowsocks 通过 HTTP 代理连接'
+title: 'GoAgentX ＋ Proxifier 让不支持代理的软件实现走代理'
 date: 2014-10-20 05:01
 comments: true
 header-img: "assets/common/greatwall-bg.jpg"
 author:     "任平生"
 tags:
     - GoAgentX
+    - Shadowsocks
+    - Proxifier
     - 代理
 ---
 公司内上网必须要通过 HTTP 代理，而我们个人翻墙的时候用到的利器 GoAgentX 必须也要通过 http 代理才能连上 Shadowsocks 的代理服务器（这是多么的蛋疼）。
 
 这时候，我们需要一个叫做 [Proxifier](http://www.proxifier.com/)（[网盘下载](http://pan.baidu.com/s/1pJkFybh)）的应用来实现那些不能设置代理的软件来通过代理。
 
-1、添加 HTTPS 代理
+1、在 Proxifier 里添加 HTTPS 代理
 
 ![Proxifier-http-proxy.png](/assets/2014/10/Proxifier-http-proxy.png)
 

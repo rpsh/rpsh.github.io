@@ -13,23 +13,25 @@ layout: default
 	}
 </style>
 <header class="intro-header" >
-	<div class="container">
+	<div class="container" itemscope itemtype="http://schema.org/NewsArticle">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="post-heading">
 					<div class="tags">
 						{% for tag in page.tags %}
-						<a class="tag" href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+						<a class="tag" href="/tags/#{{ tag }}" rel="tag" title="{{ tag }}">{{ tag }}</a>
 						{% endfor %}
 					</div>
-					<h1>{{ page.title }}</h1>
+					<h1 itemprop="headline">{{ page.title }}</h1>
 					{% comment %}
 						always create a h2 for keeping the margin , Hux
 					{% endcomment %}
 					{% comment %} if page.subtitle {% endcomment %}
-					<h2 class="subheading">{{ page.subtitle }}</h2>
+					<h2 class="subheading" itemprop="alternativeHeadline">{{ page.subtitle }}</h2>
 					{% comment %} endif {% endcomment %}
 					<span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+					<img class="meta-thumb" itemprop="image" src="/assets/common/icon_wechat.png" alt="{{ page.title }}"/>
+					<meta itemprop="datePublished" content="{{ page.date }}"/>
 				</div>
 			</div>
 		</div>
@@ -80,12 +82,12 @@ layout: default
 				<ul class="pager">
 					{% if page.previous.url %}
 					<li class="previous">
-						<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+						<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.previous.title}}" rel="bookmark">&larr; {{page.previous.title}}</a>
 					</li>
 					{% endif %}
 					{% if page.next.url %}
 					<li class="next">
-						<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+						<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.next.title}}" rel="bookmark">{{page.next.title}} &rarr;</a>
 					</li>
 					{% endif %}
 				</ul>
@@ -94,7 +96,7 @@ layout: default
 				{% if site.disqus_username %}
 				<!-- 评论框 start -->
 				<div class="post-comment">
-					<div id="disqus_thread" class="ds-thread"
+					<div id="disqus_thread" class="disqus-thread"
 						data-thread-key="{{page.id}}"
 						data-title="{{page.title}}"
 						data-url="{{site.url}}{{page.url}}" >
@@ -123,11 +125,11 @@ layout: default
 				{% if site.featured-tags %}
 				<section>
 					<hr class="hidden-sm hidden-xs">
-					<h5><a href="/tags/">FEATURED TAGS</a></h5>
+					<h5><a href="/tags/" rel="tag">FEATURED TAGS</a></h5>
 					<div class="tags">
 						{% for tag in site.tags %}
 							{% if tag[1].size > {{site.featured-condition-size}} %}
-								<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+								<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="tag" date-size="{{ tag[1].size }}">
 									{{ tag[0] }}
 								</a>
 							{% endif %}

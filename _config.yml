@@ -5,10 +5,12 @@ header-img: "assets/common/home-bg.jpg"
 email: myrpsh@gmail.com
 description: "任平生的学习笔记，记录平时学习点滴。RPSH's Notes"
 keyword: "任平生, 互联网, 前端, rpsh"
+author: "任平生"
 url: "http://note.rpsh.net"
 baseurl: ""
 timezone: Asia/Shanghai
 feedurl: "http://feeds.rpsh.net/rpsh/note"
+logourl: "/assets/common/favicon.png"
 
 # SNS settings
 RSS: true
@@ -17,8 +19,11 @@ zhihu_username:     rpsh
 github_username:    rpsh
 twitter_username:   rpsh
 instagram_username: rpsh
+linkedin_username: 	ihaiyang
 #facebook_username:  haiyang
 
+# Google Plus Author id
+google-plus-id: "100791036880126418228"
 
 
 
@@ -39,6 +44,7 @@ anchorjs: true                          # if you want to customize anchor. check
 markdown: redcarpet
 #kramdown:
 #  input: GFM                            # use Github Flavored Markdown !important
+
 
 
 

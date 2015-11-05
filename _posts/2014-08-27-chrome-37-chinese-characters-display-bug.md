@@ -7,7 +7,6 @@ author:     "任平生"
 header-img: "assets/common/chrome-bg.jpg"
 tags:
     - Chrome
-    - Chrome/classList
 ---
 更新 Chrome 到 37 后，发现很多网页的汉字都不显示了：
 

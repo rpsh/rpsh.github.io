@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'js 判断浏览器窗口是否处于当前激活状态'
+title: 'JS 判断浏览器窗口是否处于当前激活状态'
 date: 2012-03-12 09:46
 comments: true
 author:     "任平生"

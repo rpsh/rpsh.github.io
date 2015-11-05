@@ -4,6 +4,7 @@ title: '.htaccess 重定向而URL地址不变'
 date: 2012-03-06 08:07
 comments: true
 author:     "任平生"
+header-img: "assets/common/server-bg.jpg"
 tags:
     - Apache
     - .htaccess

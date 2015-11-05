@@ -6,7 +6,7 @@ comments: true
 author:     "任平生"
 tags:
     - OSX
-    - OSX/bugfix
+    - Yosemite
 ---
 在 Yosemite 中遇到类似这样下载失败的图标，按住 option 也不能删除掉
 

@@ -6,7 +6,7 @@ comments: true
 header-img: "assets/common/home-bg.jpg"
 author:     "任平生"
 tags:
-    - Github Page
+    - Github Pages
     - Google
     - Baidu
     - 站内搜索

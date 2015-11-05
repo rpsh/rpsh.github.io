@@ -178,3 +178,39 @@
 	})();
 </script>
 {% endif %}
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "{{ site.url }}",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "{{ site.url }}/search/?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"url": "{{ site.url }} ",
+	"logo": "{{ site.logourl | prepend: site.url }}"
+}
+</script>
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Person",
+	"name" : "{{ site.author }}",
+	"url" : "{{ site.site }}",
+	"sameAs" : [
+		{% if site.facebook_username %}"http://www.facebook.com/{{ site.facebook_username }}",{% endif %}
+		{% if site.twitter_username %}"http://twitter.com/{{ site.twitter_username }}",{% endif %}
+		{% if site.instagram_username %}"http://instagram.com/{{ site.instagram_username }}",{% endif %}
+		{% if site.linkedin_username %}"http://www.linkedin.com/in/{{ site.linkedin_username }}",{% endif %}
+		{% if site.google-plus-id %}"http://plus.google.com/{{ site.google-plus-id }}"{% endif %}
+	]
+}
+</script>

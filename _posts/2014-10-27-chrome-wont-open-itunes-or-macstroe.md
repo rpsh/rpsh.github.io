@@ -7,6 +7,7 @@ header-img: "assets/common/chrome-bg.jpg"
 author:     "任平生"
 tags:
     - Chrome
+    - iTunes
 ---
 
 <img src="/assets/2014/10/open-itunes.jpg" alt="open-itunes.jpg" width="400">

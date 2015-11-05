@@ -7,6 +7,7 @@ header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
     - JS
+    - IE
     - 浏览器
     - 渲染模式
 ---

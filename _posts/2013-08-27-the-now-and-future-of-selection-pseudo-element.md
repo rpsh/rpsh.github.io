@@ -4,30 +4,31 @@ title: '伪元素 ::selection 的现状与未来'
 date: 2013-08-27 03:01
 comments: true
 author:     "任平生"
-header-img: "assets/common/css3-bg.jpg"
+header-img: "assets/common/css-bg.jpg"
 tags:
-    - CSS3
+    - CSS
     - CSS/selection
 ---
 伪元素 `::selection` 用来定义反选的样式，一般写法如下：  
 
 ```css
 ::-moz-selection{  
- color: white;  
- background: hotpink;  
+	color: white;  
+	background: hotpink;  
 }  
 ::selection{  
- color: white;  
- background: hotpink;  
+	color: white;  
+	background: hotpink;  
 } 
 ```
   
 除了 IE6-8，其他现代浏览均支持这段CSS。Firefox 是唯一一个需要 `-moz` 前缀的浏览器。请注意，若为了缩减代码，而将  `::-moz-selection` 与 `::selection` 通过逗号连写在一起是无法生效的。  
  
 ```css
-::-moz-selection, ::selection{  
- color: white;  
- background: hotpink;  
+::-moz-selection, 
+::selection{  
+	color: white;  
+	background: hotpink;  
 }
 /* 注意：这段CSS是无效的 */  
 ``` 
@@ -45,7 +46,7 @@ tags:
 
 > _本节特意留空（本节曾经用来定义伪元素::selection）_
 
-_/* 尼玛，这是行为艺术啊 */_  
+_/* 尼玛，这是行为艺术啊  */_  
   
 就像 MDN 文档中醒目标明的那样，这是一个『不标准』的特性。  
   
@@ -69,6 +70,7 @@ MDN 的[文档](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)提
   
 
 ## ::selection 的其他一些身影
+
 - [CSS Selectors level 4](http://dev.w3.org/csswg/selectors4/ "CSS Selectors level 4") 草案中没有 `::selection` 的章节，前景不妙；
 - 2012年1月的[一个讨论](http://lists.w3.org/Archives/Public/www-style/2012Jan/0514.html "Status of the ::selection pseudo-element")：为什么将 `::selection` 从规范中删除，提出了一个替代语法方案，但未获得任何关注；
 - [CSS3 UI 模型](http://www.w3.org/TR/css3-ui/ "CSS3 UI 模型")中的[伪元素](http://www.w3.org/TR/css3-ui/#pseudo-elements "伪元素")章节也[提到](http://www.w3.org/TR/css3-ui/#changes-list)了 `::selection` 从规范中删除的事情；
@@ -79,9 +81,13 @@ MDN 的[文档](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)提
 
 ## 使用 ::selection 时的一些 Tips
 尽管 `::selection` 的未来岌岌可危，但依然有很多人喜欢它。当然也有一些人认为它搞乱了浏览器应当独立控制的一些东西。不过，还是有一些 Tips 值得我们了解：
+
 - `::selection` 可以使用的属性有： `color`，`background`，`background-color`，`text-shadow`；
+
 - 虽然 `background` 可以使用，但 `background-image` 却是不能使用的；
+
 - 因为 `::selection` 并不是标准的伪元素和无望进入规范的前景， Firefox 可能永远不会支持无 `-moz` 前缀的语法；
+
 - `::selection` 必须使用双冒号，因为 CSS3 规范中要求所有新增的伪元素都必须使用双冒号的语法结构，这是为了跟伪类区分开来（伪类使用单冒号，如：`a:hover`）。
   
   

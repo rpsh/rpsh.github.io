@@ -7,7 +7,6 @@ header-img: "assets/common/chrome-bg.jpg"
 author:     "任平生"
 tags:
     - Chrome
-    - Chrome/bug
     - CSS
 ---
 

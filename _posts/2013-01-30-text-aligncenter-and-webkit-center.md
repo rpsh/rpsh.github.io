@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'text-align:center 与-webkit-center/-moz-center的区别'
+title: 'text-align:center 与 -webkit-center/-moz-center 的区别'
 date: 2013-01-30 07:28
 comments: true
 author:     "任平生"

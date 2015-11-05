@@ -4,8 +4,10 @@ title: 'App Store 链接中的 mt=8 是什么意思'
 date: 2014-03-26 13:34
 comments: true
 author:     "任平生"
+header-img: "assets/common/ios-bg.jpg"
 tags:
     - App Store
+    - iOS
 ---
 
 常见到 iOS App 发出来的下载链接最后都会跟一个 `?mt=8` 的尾巴，这是什么意思呢？在 Stackoverflow 上找到了[答案](http://stackoverflow.com/questions/1781427/what-is-mt-8-in-itunes-links-for-the-appstore "What is “mt=8” in iTunes links for the appstore?")：

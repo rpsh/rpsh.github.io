@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'html5  download 属性'
+title: 'HTML5 download 属性'
 date: 2013-02-18 14:28
 comments: true
 author:     "任平生"

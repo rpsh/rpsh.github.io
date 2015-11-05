@@ -963,7 +963,31 @@ body {
 	color: #ddd;
 }
 
+/* meta */
+.meta-thumb{
+	display: none;
+}
 
+/* 翻页 */
+.pager{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: start;
+}
+.pager li{
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+}
+.pager li a{
+	float: none !important;
+}
+.pager .next{
+	-webkit-box-pack: end;
+}
+.pager .next>a{
+	margin-left: 10px;
+}
 /* sidebar search */
 .search-form .search-input:focus{
 	outline: none;
@@ -977,3 +1001,4 @@ body {
 	border: 1px solid #bfbfbf;
 	border-radius: 999em;
 }
+

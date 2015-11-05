@@ -6,6 +6,7 @@ comments: true
 header-img: "assets/common/ie-bg.jpg"
 author:     "任平生"
 tags:
+    - IE
     - IE10
     - 渲染模式
 ---

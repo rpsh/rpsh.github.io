@@ -7,6 +7,7 @@ author:     "任平生"
 header-img: "assets/common/iphone-bg.jpg"
 tags:
     - iPhone
+    - iOS
     - 屏幕录制
 ---
 升级到 iOS8 后，配合 Yosemite 的 QuickTime 就可以免越狱、免插件录制 iPhone、iPad 屏幕录像。

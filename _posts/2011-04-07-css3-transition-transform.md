@@ -7,6 +7,7 @@ header-img: "assets/common/css3-bg.jpg"
 author:     "任平生"
 tags:
     - CSS3
+    - CSS
     - CSS/transition
     - CSS/transform
 ---
