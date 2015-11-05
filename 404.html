@@ -15,5 +15,51 @@ permalink: /404.html
 
 
 <script>
-	document.documentElement.className += 'page-fullscreen';
+/* 全屏*/
+document.documentElement.className += 'page-fullscreen';
+
+// 人肉 302 跳转 :|
+var sitehost = location.protocol + '//' + location.host;
+if( location.pathname.match('/categories/') ){
+	location.href = location.href.replace('/categories/','/tags/#')
+}
+if( location.pathname.match(/archives/) ){
+	location.href = location.href.replace('/archives','/tags/#')
+}
+if( location.pathname.match(/(about\-me|about.html)/i)){
+	location.href = sitehost + '/about/'
+}
+if( location.pathname.match('93712-javascript-ie') ){
+	location.href = sitehost + '/posts/2011/04/14/javascript-ie-documentmode/'
+}
+if( location.pathname.match('2011/05/18/windowhistory/') ){
+	location.href = sitehost + '/posts/2011/05/18/window-history/'
+}
+if( location.pathname.match('2015/08/07/289897') ){
+	location.href = sitehost + '/posts/2015/08/07/right-to-left-override-unicode/'
+}
+if( location.pathname.match('2011/05/20/css/') ){
+	location.href = sitehost + '/posts/2011/05/20/js-detect-css-support/'
+}
+if( location.pathname.match('posts/2011/06/10/elementclasslist-api') ){
+	location.href = sitehost + '/posts/2011/06/10/js-classlist-api/'
+}
+if( location.pathname.match('posts/2011/04/14/javascript-ie/') ){
+	location.href = sitehost + '/posts/2011/04/14/javascript-ie-documentmode/'
+}
+if( location.pathname.match('posts/2011/06/10/elementdataset-api/') ){
+	location.href = sitehost + '/posts/2011/06/10/js-dataset-api/'
+}
+if( location.pathname.match('posts/2011/12/16/ie10s-html5-quirks-mode') ){
+	location.href = sitehost + '/posts/2011/12/15/ie10s-html5-quirks-mode/'
+}
+if( location.pathname.match('posts/2011/12/28/reverse-ordered-lists-in-html5/') ){
+	location.href = sitehost + '/posts/2011/12/27/reverse-ordered-lists-in-html5/'
+}
+if( location.pathname.match('posts/2006/10/07/blog-post') ){
+	location.href = sitehost + 'posts/2006/10/07/hello-world/'
+}
+if( location.pathname.match('posts/2013/11/26/osx-10-9-apache-server-php-mysql') ){
+	location.href = sitehost + '/posts/2013/11/26/osx-apache-server-php-mysql/'
+}
 </script>
