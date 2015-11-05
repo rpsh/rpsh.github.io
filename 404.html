@@ -107,10 +107,10 @@ if( location.pathname.match('2011/04/14/blog-post') ){
 if( location.pathname.match('2006/10/08/blog-post') ){
 	location.href = sitehost + '/posts/2006/10/07/hello-world/'
 }
-if( location.pathname.match('/posts/?page=') ){
-	location.href = sitehost + '/page'
+if( location.href.match('page=') ){
+	location.href = location.href.replace('/posts/?page=','/page')
 }
 if( location.pathname.match('/tags/') ){
-	location.href = sitehost + '/tags/#'
+	location.href = location.href.replace('/tags/','/tags/#')
 }
 </script>
