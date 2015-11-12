@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'GoAgentX ＋ Proxifier 让不支持代理的软件实现走代理'
+title: "GoAgentX ＋ Proxifier 让不支持代理的软件实现走代理"
+description: "使用 Proxifier 可以为 Mac 上不支持设置代理的软件设置走代理的方式。"
+keyword: "GoAgentX, Proxifier, Shadowsocks, 代理"
 date: 2014-10-20 05:01
 comments: true
 header-img: "assets/common/greatwall-bg.jpg"
+thumb-img: "assets/common/greatwall-thumb.jpg"
 author:     "任平生"
 tags:
     - GoAgentX

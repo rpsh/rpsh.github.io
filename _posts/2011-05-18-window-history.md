@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'window.history'
+title: "window.history"
+description: "通常，我们使用 #hash 跳转页面的某个位置，但有时跳转并不是你想要的，如果阻止了默认的跳转行为，那么 #hash 就不会计入 history ，点击浏览器的后退按钮就什么都不会发生了"
+keyword: "history, js"
 date: 2011-05-18 10:18
 comments: true
 header-img: "assets/common/js-bg.jpg"
+thumb-img: "assets/common/js-thumb.jpg"
 author:     "任平生"
 tags:
     - JS

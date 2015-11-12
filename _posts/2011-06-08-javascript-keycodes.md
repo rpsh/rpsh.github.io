@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'javascript keycodes 键盘键值'
+title: "javascript keycodes 键盘键值"
+description: "在页面上增加键盘快捷键"
+keyword: "keycodes, js"
 date: 2011-06-08 09:59
 comments: true
 header-img: "assets/common/js-bg.jpg"
+thumb-img: "assets/common/js-thumb.jpg"
 author:     "任平生"
 tags:
     - JS

@@ -1,9 +1,13 @@
 ---
 layout: post
-title: 'iPhone 上CSS定义 active 样式'
+title: "iPhone 上CSS定义 active 样式"
+description: "如果给按钮定义 :hover 样式，在 iPhone 上按钮点击一次是 hover 态，再点击一次 hover 态才会消失，这显然不是我们想要的，继而想通过定义 :active 样式来实现按钮按下时的效果，但发现定义的 active 样式在 iPhone 上点击时没有任何效果。 "
+keyword: "css, active, ontouchstart, touchstart"
 date: 2014-03-18 14:03
 comments: true
 author:     "任平生"
+header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-thumb.jpg"
 tags:
     - CSS
     - iOS

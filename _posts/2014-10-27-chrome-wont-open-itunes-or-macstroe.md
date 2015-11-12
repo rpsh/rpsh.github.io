@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '解决 Chrome 不能打开 iTunes 或 Mac Appstore'
+title: "解决 Chrome 不能打开 iTunes 或 Mac Appstore"
+description: "在 Chrome 里点 iTunes/Mac Appstore 里的打开链接，不能正确启动 iTunes/Mac AppStore，重新启用的方法是找到 Local State 文件，删除其中对应条目"
+keyword: "chrome, itunes, Mac Appstore"
 date: 2014-10-27 02:34
 comments: true
 header-img: "assets/common/chrome-bg.jpg"
+thumb-img: "assets/common/chrome-thumb.jpg"
 author:     "任平生"
 tags:
     - Chrome

@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '.htaccess 重定向而URL地址不变'
+title: ".htaccess 重定向而URL地址不变"
+description: "在做 liveto.me 时候就用了这个技巧， 使用 .htaccess rewrite 重定向内容，而地址栏的URL保持不变。 "
+keyword: "htaccess"
 date: 2012-03-06 08:07
 comments: true
 author:     "任平生"
-header-img: "assets/common/server-bg.jpg"
+header-img: "assets/common/apache-bg.jpg"
+thumb-img: "assets/common/apache-thumb.jpg"
 tags:
     - Apache
     - .htaccess

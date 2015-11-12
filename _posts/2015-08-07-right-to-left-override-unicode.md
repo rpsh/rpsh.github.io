@@ -1,6 +1,8 @@
 ---
 layout: post
 title: '让文字从右往左反转显示的 unicode'
+description: "有一个特殊的 unicode 可以让跟在它后边的文字从右往左反转显示，利用它可以做一些有趣的事情，让一些看起来正常的文字，其实背后藏着一些不正常的原文。"
+keyword: "unicode, 有趣的unicode"
 date: 2015-08-07 03:30
 comments: true
 author:     "任平生"

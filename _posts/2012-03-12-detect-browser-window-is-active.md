@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'JS 判断浏览器窗口是否处于当前激活状态'
+title: "JS 判断浏览器窗口是否处于当前激活状态"
+description: "项目中有个定时器，希望在浏览器窗口处于激活状态时运行，而非激活状态则停止。代码如下："
+keyword: "js"
 date: 2012-03-12 09:46
 comments: true
 author:     "任平生"
 header-img: "assets/common/js-bg.jpg"
+thmb-img: "assets/common/js-thmb.jpg"
 tags:
     - JS
 ---

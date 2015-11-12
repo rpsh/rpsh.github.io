@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '一些神奇的 IE Meta Tags'
+title: "一些神奇的 IE Meta Tags"
+description: "一些神奇的 IE Meta Tags"
+keyword: "IE, meta tags"
 date: 2013-01-21 15:41
 comments: true
 header-img: "assets/common/ie-bg.jpg"
+thumb-img: "assets/common/ie-thumb.jpg"
 author:     "任平生"
 tags:
     - IE

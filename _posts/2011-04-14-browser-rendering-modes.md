@@ -1,6 +1,8 @@
 ---
 layout: post
-title: '浏览器渲染模式'
+title: "浏览器渲染模式"
+description: "浏览器共有三种渲染模式：怪异模式（Quirks mode）、准标准模式（almost standards mode）、标准模式（full standards mode）"
+keyword: "怪异模式, 准标准模式, 标准模式"
 date: 2011-04-14 08:44
 comments: true
 author:     "任平生"
@@ -10,7 +12,7 @@ tags:
 ---
 
 
-共有三种渲染模式：怪异模式（Quirks mode）、准标准模式（almost standards mode）、标准模式（full standards mode）  
+浏览器共有三种渲染模式：怪异模式（Quirks mode）、准标准模式（almost standards mode）、标准模式（full standards mode）  
 各个浏览器相同版本的 标准模式 和 准标准模式 之间差异极少。  
   
 

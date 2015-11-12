@@ -1,6 +1,8 @@
 ---
 layout: post
-title: '使用 ffmpeg 实现 MP4 与 GIF 的互转'
+title: "使用 ffmpeg 实现 MP4 与 GIF 的互转"
+description: "使用 ffmpeg 将 mp4 转为 gif，可以设置缩小尺寸，提取某一帧图片，设置转换为 gif 的图片质量。"
+keyword: "ffmpeg, gif, mp4, mp4转gif, gif转mp4"
 date: 2015-04-21 14:00
 comments: true
 author:     "任平生"

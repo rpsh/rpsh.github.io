@@ -1,6 +1,8 @@
 ---
 layout: post
-title: '给网址最后添加斜杠'
+title: "给网址最后添加斜杠"
+description: "如果可能，应尽量给 URL 的最后加上一个斜杠 / 这样可以减少页面跳转"
+keyword: "性能优化"
 date: 2013-11-20 09:05
 comments: true
 author:     "任平生"

@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'HTML5: element.classList API'
+title: "HTML5: element.classList API"
+description: "element.classList 将会返回 element 的 class 信息  "
+keyword: "classList, js"
 date: 2011-06-10 09:31
 comments: true
 author:     "任平生"
 header-img: "assets/common/js-bg.jpg"
+thumb-img: "assets/common/js-thumb.jpg"
 tags:
     - JS
     - JS/classList

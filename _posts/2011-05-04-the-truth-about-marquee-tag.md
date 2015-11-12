@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '有关 &lt;marquee&gt; 标签的一些现实'
+title: "有关 &lt;marquee&gt; 标签的一些现实"
+description: "今天发现了一个蛋疼的现实：&lt;marquee&gt; 是被各个浏览器都支持的，我们可以大胆地使用"
+keyword: "marquee, 跑马灯"
 date: 2011-05-04 07:28
 comments: true
 header-img: "assets/common/html-bg.jpg"
+thumb-img: "assets/common/html-thumb.jpg"
 author:     "任平生"
 tags:
     - HTML

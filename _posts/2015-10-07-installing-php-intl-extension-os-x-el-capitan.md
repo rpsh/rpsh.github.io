@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'Mac OS X 安装 PHP intl 扩展'
+title: "Mac OS X 安装 PHP intl 扩展"
+description: "如何在 Mac OS X 上安装多语言支持的 PHP intl 扩展，可以使用 brew 方式，或者手动编译安装。关掉 Mac OS X rootless 的方法"
+keyword: "PHP intl, PHP 多语言支持, rootless"
 date: 2015-10-07 10:26
 comments: true
 header-img: "assets/common/php-bg.jpg"
+thumb-img: "assets/common/php-thumb.jpg"
 author:     "任平生"
 tags:
     - OSX

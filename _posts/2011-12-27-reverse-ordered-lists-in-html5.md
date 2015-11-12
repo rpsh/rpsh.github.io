@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'ol 有序列表序号的倒序'
+title: "ol 有序列表序号的倒序"
+description: "原来 OL 有序列表还可以定义序号的起始数字呢。不过在 HTML4 规范中是被废弃的，但「神奇」的是浏览器却都支持这个属性。"
+keyword: "有序列表"
 date: 2011-12-27 16:00
 comments: true
 author:     "任平生"
 header-img: "assets/common/html-bg.jpg"
+thumb-img: "assets/common/html-thumb.jpg"
 tags:
     - HTML
 ---

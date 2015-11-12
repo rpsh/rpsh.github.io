@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '设置 Chrome 强制网站使用 HTTPS'
+title: "设置 Chrome 强制网站使用 HTTPS"
+description: "chrome://net-internals/#hsts 可以设置强制使用 https 链接的网址  "
+keyword: "https, net-internals, chrome"
 date: 2011-04-19 08:19
 comments: true
 header-img: "assets/common/chrome-bg.jpg"
+thumb-img: "assets/common/chrome-thumb.jpg"
 author:     "任平生"
 tags:
     - Chrome

@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'HTML5 Shiv 的一些趣事'
+title: "HTML5 Shiv 的一些趣事"
+description: "我敢肯定，你一定没听说过 Sjoerd Visscher 这个名字，虽然你天天在熟练地用着 HTML5 Shiv 去修复 IE 不能识别未知元素的bug。 "
+keyword: "html5 shiv"
 date: 2011-05-25 03:15
 comments: true
 header-img: "assets/common/html5-bg.jpg"
+thumb-img: "assets/common/html5-thumb.jpg"
 author:     "任平生"
 tags:
     - HTML5

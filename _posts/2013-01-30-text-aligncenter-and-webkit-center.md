@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'text-align:center 与 -webkit-center/-moz-center 的区别'
+title: "text-align:center 与 -webkit-center/-moz-center 的区别"
+description: "text-align:center 与 text-align:-webkit-center/-moz-center 的区别"
+keyword: "-webkit-center, -moz-center"
 date: 2013-01-30 07:28
 comments: true
 author:     "任平生"
 header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-thumb.jpg"
 tags:
     - CSS
 ---

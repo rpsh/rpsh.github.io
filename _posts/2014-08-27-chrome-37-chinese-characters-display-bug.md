@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '解决 Chrome 37 中文汉字不显示的bug'
+title: "解决 Chrome 37 中文汉字不显示的bug"
+description: "更新 Chrome 到 37 后，发现很多网页的汉字都不显示了，将「停用 DirectWrite」选项，设置为启用。重启 Chrome 问题解决。"
+keyword: "chrome"
 date: 2014-08-27 15:35
 comments: true
 author:     "任平生"
 header-img: "assets/common/chrome-bg.jpg"
+thumb-img: "assets/common/chrome-thumb.jpg"
 tags:
     - Chrome
 ---

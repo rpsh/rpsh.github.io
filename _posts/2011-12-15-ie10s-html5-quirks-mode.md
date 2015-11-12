@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'IE10 的 HTML5 怪异模式'
+title: "IE10 的 HTML5 怪异模式"
+description: "微软将 IE10 中默认的怪异模式称之为： HTML5 怪异模式（HTML5 Quirks Mode），一方面它遵循HTML5 定义的渲染规则，同时也遵守怪异模式的渲染规则"
+keyword: "IE10, 渲染模式"
 date: 2011-12-15 16:02
 comments: true
 header-img: "assets/common/ie-bg.jpg"
+thumb-img: "assets/common/ie-thumb.jpg"
 author:     "任平生"
 tags:
     - IE

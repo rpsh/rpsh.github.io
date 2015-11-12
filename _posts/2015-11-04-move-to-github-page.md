@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '迁移至 Github Pages'
+title: "迁移至 Github Pages"
+description: "迁移 note.rpsh.net 到 github pages。在 github pages 搭建博客，并添加 Google/Baidu 作为站内搜索"
+keyword: "Github Pages, 博客, 站内搜索, 自定义搜索"
 date: 2015-11-04 11:30
 comments: true
 header-img: "assets/common/home-bg.jpg"
+thumb-img: "assets/common/thumb-bg.jpg"
 author:     "任平生"
 tags:
     - Github Pages

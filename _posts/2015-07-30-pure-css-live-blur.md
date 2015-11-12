@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '纯 CSS 实现实时动态毛玻璃效果'
+title: "纯 CSS 实现实时动态毛玻璃效果"
+description: "iOS9 支持使用 css3 来实现动态毛玻璃效果：-webkit-backdrop-filter"
+keyword: "毛玻璃, ios9新特性, css3, backdrop-filter"
 date: 2015-07-30 12:18
 comments: true
 author:     "任平生"
 header-img: "assets/common/css3-bg.jpg"
+thumb-img: "assets/common/thumb-bg.jpg"
 tags:
     - CSS3
     - CSS

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: '使用 Droplr 图片地址'
+title: "使用 Droplr 图片地址"
+description: "使用 Droplr 上传图片后，会自动获得一个 URL，如： http://d.pr/i/uw3d 。不过这个 URL 是页面而不是图片的，要想在 Markdwon 中使用，只需在这个地址最后加一个 `+` 即可"
+keyword: "Droplr, Markdown 插入图片"
 date: 2013-11-26 13:48
 comments: true
 author:     "任平生"

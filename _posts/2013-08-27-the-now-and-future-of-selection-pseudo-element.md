@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '伪元素 ::selection 的现状与未来'
+title: "伪元素 ::selection 的现状与未来"
+description: "伪元素 `::selection` 用来定义反选的样式"
+keyword: "selection, css"
 date: 2013-08-27 03:01
 comments: true
 author:     "任平生"
 header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-thumb.jpg"
 tags:
     - CSS
     - CSS/selection

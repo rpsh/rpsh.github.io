@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '移除 IE10 input 输入框上的清除按钮'
+title: "移除 IE10 input 输入框上的清除按钮"
+description: "IE10 除了默认交互控件的 UI 丑之外，还给 input 加了一个清除按钮，虽然看起来很有用的样子，实际情况中却有很多设计容不下它，所以我们前端就要隐藏掉这个东西"
+keyword: "ie10, -ms-clear"
 date: 2013-01-09 08:19
 comments: true
 header-img: "assets/common/ie-bg.jpg"
+thumb-img: "assets/common/ie-bgthumb.jpg"
 author:     "任平生"
 tags:
     - CSS

@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '判断浏览器是否支持某个css属性'
+title: "判断浏览器是否支持某个css属性"
+description: "根据 UA 来判断浏览器版本，再根据浏览器版本来确定是否支持某个 css 属性的方法弱爆了，直接判断浏览器是否支持某个CSS属性才是王道。  "
+keyword: "css, js "
 date: 2011-05-20 10:14
 comments: true
 header-img: "assets/common/js-bg.jpg"
+thumb-img: "assets/common/js-bthumbg.jpg"
 author:     "任平生"
 tags:
     - JS

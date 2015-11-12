@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'CSS3: transition transform 学习笔记'
+title: "CSS3: transition transform 学习笔记"
+description: "transition transform 使用中常见问题与区分"
+keyword: "transition, transform, css"
 date: 2011-04-07 03:35
 comments: true
 header-img: "assets/common/css3-bg.jpg"
+thumb-img: "assets/common/css3-thumb.jpg"
 author:     "任平生"
 tags:
     - CSS3

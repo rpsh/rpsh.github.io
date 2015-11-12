@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '微信 webview 清理缓存方法'
+title: "微信 webview 清理缓存方法"
+description: "在做微信移动页面开发时若用到清理缓存，iPhone 会很容易，Android 则麻烦一些，方法如下"
+keyword: "微信, webview, 清除缓存"
 date: 2014-04-15 12:20
 comments: true
 author:     "任平生"
 header-img: "assets/common/wechat-bg.jpg"
+thumb-img: "assets/common/wechat-thumb.jpg"
 tags:
     - 微信
     - 移动开发

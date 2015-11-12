@@ -979,7 +979,7 @@ body {
 	display: -webkit-box;
 	-webkit-box-flex: 1;
 }
-.pager li a{
+:root .pager li a{
 	float: none !important;
 }
 .pager .next{

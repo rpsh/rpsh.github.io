@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'Mac OS X 启用 Web 服务器'
+title: "Mac OS X 启用 Web 服务器"
+description: "Mac OS X 依旧预装了 Apache ，但是已经不能在 「系统偏好设置」中的「Web 共享」来开启了，需要手动通过命令行开启。"
+keyword: "OS X, Apache, Mac 服务器"
 date: 2013-11-26 16:22
 comments: true
 author:     "任平生"
 header-img: "assets/common/server-bg.jpg"
+thumb-img: "assets/common/server-thumb.jpg"
 tags:
     - OSX
     - Apache

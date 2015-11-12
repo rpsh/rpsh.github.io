@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 'OS X Yosemite 如何删掉 Launchpad 里下载不成功的图标'
+title: "OS X Yosemite 如何删掉 Launchpad 里下载不成功的图标"
+description: "在 Yosemite 中遇到类似这样下载失败的图标，按住 option 也不能删除掉"
+keyword: "Yosemite, ghost icon"
 date: 2014-08-22 05:23
 comments: true
 author:     "任平生"

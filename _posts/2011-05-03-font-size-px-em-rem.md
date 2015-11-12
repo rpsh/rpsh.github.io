@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'font-size 的 px em 与 rem 的区别'
+title: "font-size 的 px em 与 rem 的区别"
+description: "em 以父节点作为标准计算， rem 以根节点 html 来计算字体大小"
+keyword: "rem, em, css"
 date: 2011-05-03 08:25
 comments: true
 header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-thumb.jpg"
 author:     "任平生"
 tags:
     - CSS

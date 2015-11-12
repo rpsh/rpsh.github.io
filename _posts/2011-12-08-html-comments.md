@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'HTML 注释的前世今生'
+title: "HTML 注释的前世今生"
+description: "HTML 语言是从 SGML 衍生来的，HTML 的「注释」语法也就应该跟 SGML 的「注释」是一致的。实际上，它们之间却有一些的差异。 "
+keyword: "html注释"
 date: 2011-12-08 07:50
 comments: true
 header-img: "assets/common/html-bg.jpg"
+thumb-img: "assets/common/html-thumb.jpg"
 author:     "任平生"
 tags:
     - HTML

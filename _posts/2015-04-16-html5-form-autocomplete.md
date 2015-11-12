@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'HTML5 表单自动填表功能'
+title: "HTML5 表单自动填表功能"
+description: "使用 autocomplete 属性可以为表单提供自动填表能力"
+keyword: "自动填表, autocomplete"
 date: 2015-04-16 11:00
 comments: true
 author:     "任平生"
 header-img: "assets/common/html5-bg.jpg"
+thumb-img: "assets/common/html5-thumb.jpg"
 tags:
     - HTML5
     - HTML/autocomplete

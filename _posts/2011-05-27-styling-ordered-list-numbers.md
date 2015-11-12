@@ -1,9 +1,12 @@
 ---
 layout: post
-title: '自定义有序列表 li 项目符号的数字样式'
+title: "自定义有序列表 li 项目符号的数字样式"
+description: "下面是一个自定义有序列表 li 项目符号样式的思路"
+keyword: "有序列表"
 date: 2011-05-27 09:07
 comments: true
 header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-bgthumb.jpg"
 author:     "任平生"
 tags:
     - CSS

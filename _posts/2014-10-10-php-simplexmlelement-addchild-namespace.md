@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'PHP SimpleXMLElement 添加带 Namespace 的节点'
+title: "PHP SimpleXMLElement 添加带 Namespace 的节点"
+description: "使用 PHP SimpleXMLElement 生成 feed 的 xml 文件时候，怎么添加带 namespace 的节点"
+keyword: "SimpleXMLElement, Namespace, PHP"
 date: 2014-10-10 14:46
 comments: true
 header-img: "assets/common/php-bg.jpg"
+thumb-img: "assets/common/php-thumb.jpg"
 author:     "任平生"
 tags:
     - PHP

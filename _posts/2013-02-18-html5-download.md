@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'HTML5 download 属性'
+title: "HTML5 download 属性"
+description: "HTML5 的 download 属性有两个作用：一、使链接点击后发起下载，二、通过download 属性来定义下载文件的名字"
+keyword: "download"
 date: 2013-02-18 14:28
 comments: true
 author:     "任平生"
 header-img: "assets/common/html5-bg.jpg"
+thumb-img: "assets/common/html5-thumb.jpg"
 tags:
     - HTML5
     - HTML5/download

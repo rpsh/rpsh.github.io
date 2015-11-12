@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'synergy: 一套键鼠控制多台 Mac 与 Windows'
+description: "Synergy 可以用来连接多台 Mac 与 Windows，操控它们只需要一套键鼠"
+keyword: "Synergy"
 date: 2014-09-23 06:17
 comments: true
 author:     "任平生"

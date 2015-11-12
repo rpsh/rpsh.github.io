@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'IE兼容性列表（Compatibility View List）'
+title: "IE兼容性列表（Compatibility View List）"
+description: "在 IE8 中，微软通过 Windows Update 来更新这个兼容性列表；而在 IE9 中，微软开始通过一个 xml 文件来控制。"
+keyword: "IE, 兼容性列表"
 date: 2013-01-30 08:08
 comments: true
 author:     "任平生"
 header-img: "assets/common/ie-bg.jpg"
+thumb-img: "assets/common/ie-thumb.jpg"
 tags:
     - IE
     - 渲染模式

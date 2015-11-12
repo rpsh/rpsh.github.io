@@ -1,9 +1,12 @@
 ---
 layout: post
 title: 'box-decoration-break 定义换行元素样式'
+description: "box-decoration-break 可以用来定义换行元素的 background, padding, border, border-image, box-shadow, margin, clip 的样式"
+keyword: "css, box-decoration-break"
 date: 2014-12-14 13:22
 comments: true
 header-img: "assets/common/css3-bg.jpg"
+thumb-img: "assets/common/css3-thumb.jpg"
 author:     "任平生"
 tags:
     - CSS3

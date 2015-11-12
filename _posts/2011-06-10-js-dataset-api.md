@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'HTML5: element.dataset API'
+title: "HTML5: element.dataset API"
+description: "Firefox 6 中将增加一个新的 API： element.dataset 用来获取自定义数据属性 data-* 设置的值。"
+keyword: "dataset, js"
 date: 2011-06-10 08:28
 comments: true
 author:     "任平生"
 header-img: "assets/common/js-bg.jpg"
+thumb-img: "assets/common/js-thumb.jpg"
 tags:
     - JS
     - JS/dataset

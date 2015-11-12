@@ -14,7 +14,7 @@
 
 
 <!-- Image to hack wechat -->
-<img src="/assets/common/icon_wechat.png" width="0" height="0" />
+<img src="{{ site.url }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}assets/common/icon_wechat.png{% endif %}" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>

@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'Chrome(Webkit)中伪元素不支持动画的bug修复了'
+title: "Chrome(Webkit)中伪元素不支持动画的bug修复了"
+description: "webkit 中伪元素（pseudo element）不支持动画（transition 和 animation ）的bug终于修复了（Chrome  26）。这真是一个漫长的过程啊。  "
+keyword: "chrome, 伪元素"
 date: 2013-01-13 15:05
 comments: true
 header-img: "assets/common/chrome-bg.jpg"
+thumb-img: "assets/common/chrome-thumb.jpg"
 author:     "任平生"
 tags:
     - Chrome

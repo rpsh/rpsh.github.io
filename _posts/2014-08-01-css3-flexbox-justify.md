@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 'CSS3 实现两端对齐的 justify 布局'
+title: "CSS3 实现两端对齐的 justify 布局"
+description: "使用 CSS3 的 flexbox 来实现两端对齐的效果非常容易"
+keyword: "css3, -webkit-box, -webkit-box-pack"
 date: 2014-08-01 03:00
 comments: true
 author:     "任平生"
 header-img: "assets/common/css3-bg.jpg"
+thumb-img: "assets/common/css3-thumb.jpg"
 tags:
     - CSS3
     - CSS/flexbox

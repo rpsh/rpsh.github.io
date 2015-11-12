@@ -1,6 +1,8 @@
 ---
 layout: post
-title: '移动端 HTML5 页面常见问题 —— 样式篇'
+title: "移动端 HTML5 页面常见问题 —— 样式篇"
+description: "总结移动端网页制作过程中常见的问题，诸如圆角、输入框、滚动条等等"
+keyword: "html5, css, 常见问题"
 date: 2015-08-27 12:10
 comments: true
 categories: [HTML]

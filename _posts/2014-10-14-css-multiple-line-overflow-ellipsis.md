@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '纯CSS实现多行文本截断并有省略号'
+title: "纯CSS实现多行文本截断并有省略号"
+description: "使用 -webkit-line-clamp 来实现纯 CSS 的多行文本截断并有省略号"
+keyword: "css 省略号, 多行文本截断"
 date: 2014-10-14 06:35
 comments: true
 author:     "任平生"
 header-img: "assets/common/css3-bg.jpg"
+thumb-img: "assets/common/css3-thumb.jpg"
 tags:
     - CSS
     - CSS/ellipsis

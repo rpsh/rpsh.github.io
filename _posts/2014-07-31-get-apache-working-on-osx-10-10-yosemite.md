@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '解决升级 Yosemite 后， Web Server 不工作的问题'
+title: "解决升级 Yosemite 后， Web Server 不工作的问题"
+description: "升级 10.10 的 Yosemite 后， 系统自带的 Apache Server 就出问题了， ~username/ 死活访问不到，找到问题"
+keyword: "Yosemite, OSX, MAC, Web Server"
 date: 2014-07-31 03:35
 comments: true
 author:     "任平生"
 header-img: "assets/common/server-bg.jpg"
+thumb-img: "assets/common/server-thumb.jpg"
 tags:
     - Apache
     - OSX

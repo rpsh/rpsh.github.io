@@ -1,10 +1,13 @@
 ---
 layout: post
-title: '使用 CSS 将一个页面反色显示'
+title: "使用 CSS 将一个页面反色显示"
+description: "IE9 利用的 outline 的颜色 invert 来实现颜色的反色。"
+keyword: "IE9, 反转颜色"
 date: 2014-10-03 10:30
 comments: true
 author:     "任平生"
 header-img: "assets/common/css-bg.jpg"
+thumb-img: "assets/common/css-thumb.jpg"
 tags:
     - CSS
     - CSS/trick

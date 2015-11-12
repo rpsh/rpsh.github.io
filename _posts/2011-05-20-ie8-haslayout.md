@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'ie8 的 hasLayout'
+title: "ie8 的 hasLayout"
+description: "今天跟一个同事说 ie8 已经没有 hasLayout 了，但却被认为有异议，所以动手实验了一下"
+keyword: "hasLayout, ie"
 date: 2011-05-20 10:09
 comments: true
 header-img: "assets/common/ie-bg.jpg"
+thumb-img: "assets/common/ie-thumb.jpg"
 author:     "任平生"
 tags:
     - IE
