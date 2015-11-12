@@ -7,7 +7,7 @@ date: 2015-07-30 12:18
 comments: true
 author:     "任平生"
 header-img: "assets/common/css3-bg.jpg"
-thumb-img: "assets/common/thumb-bg.jpg"
+thumb-img: "assets/common/css3-thumb.jpg"
 tags:
     - CSS3
     - CSS
