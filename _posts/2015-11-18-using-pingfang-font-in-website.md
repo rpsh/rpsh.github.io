@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "在网页上使用苹方字体"
-description: "在网页上使用苹方字体。通过 CSS 定义网页中文字体为苹方： CSS font-family: PingFangSC-Regular。苹方提供了六个字种，使用方法如文。"
+description: "在网页上使用苹方字体。通过 CSS 定义网页中文字体为苹方： CSS font-family: PingFangSC-Regular。苹方提供了六个字种，简、繁、繁（港）三类，使用方法如文"
 keyword: "苹方, 苹方字体, 苹黑, font-family"
 date: 2015-11-18 23:30
 comments: true
-header-img: "assets/common/home-bg.jpg"
-thumb-img: "assets/common/home-thumb.jpg"
+header-img: "assets/common/font-bg.jpg"
+thumb-img: "assets/common/font-thumb.jpg"
 author:     "任平生"
 tags:
     - 苹方
@@ -149,6 +149,4 @@ opacity: 0.2;
 }
 
 </style>
-
-
 
