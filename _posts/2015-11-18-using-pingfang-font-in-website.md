@@ -19,7 +19,7 @@ tags:
 在 Web 上定义字体为苹方的方法：
 
 ``` css
-font-family: PingFangHK-Regular, sans-serif;
+font-family: PingFangSC-Regular, sans-serif;
 ```
 
 
