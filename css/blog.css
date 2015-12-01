@@ -372,20 +372,33 @@ pre,
 	}
 }
 .intro-header {
-	background: no-repeat center center;
-	background-color: #808080;
-	background-attachment: scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
+	position: relative;
+	background: #808080 center center no-repeat;
 	background-size: cover;
-	-o-background-size: cover;
 	margin-bottom: 0px;
-	/* 0 on mobile, modify by Hux */
+	overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
 	.intro-header {
 		margin-bottom: 20px;
 		/* response on desktop */
+	}
+}
+@media only screen and (max-width: 767px) {
+	header.intro-header:before{
+		content: '';
+		position: absolute;
+		z-index: 0;
+		top: -5%;
+		left: -5%;
+		bottom: -5%;
+		right: -5%;
+		background-color: #000;
+		opacity: 0.2;
+		/*background: center center no-repeat;
+		background-size: cover;
+		-webkit-filter: blur(30px);
+		opacity: 0.8;*/
 	}
 }
 .intro-header .site-heading,

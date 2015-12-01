@@ -7,11 +7,6 @@ layout: default
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
-<style type="text/css">
-	header.intro-header{
-		background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-	}
-</style>
 <header class="intro-header" >
 	<div class="container">
 		<div class="row">
@@ -27,7 +22,7 @@ layout: default
 					{% comment %} endif {% endcomment %}
 					<span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
 					<meta itemprop="alternativeHeadline" content="{{ page.description }}" />
-					<meta itemprop="image" content="{{ site.url }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}assets/common/icon_wechat.png{% endif %}" alt="{{ page.title }}" />
+					<meta itemprop="image" content="{{ site.url }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}assets/common/icon_wechat.png{% endif %}" />
 					<meta itemprop="datePublished" content="{{ page.date }}" />
 				</div>
 			</div>

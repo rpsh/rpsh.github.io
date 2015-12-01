@@ -1,38 +1,66 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-	<link rel="shortcut icon" type="image/x-icon" href="/assets/common/favicon.ico">
-	<link rel="shortcut icon" type="image/png" href="/assets/common/favicon.png">
-	<link rel="apple-touch-icon" href="/assets/common/favicon.png">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/common/favicon.ico" />
+	<link rel="shortcut icon" type="image/png" href="/assets/common/favicon.png" />
+	<link rel="apple-touch-icon" href="/assets/common/favicon.png" />
 
 	<title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-	<meta name="keyword"  content="{% if page.keyword %}{{ page.keyword }}, {% endif %}{{ site.keyword }}">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="keyword"  content="{% if page.keyword %}{{ page.keyword }}, {% endif %}{{ site.keyword }}" />
 	
 	{% if site.google-plus-id %}<link rel="author" href="https://plus.google.com/{{ site.google-plus-id }}/posts" />{% endif %}
 	
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
 	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" />
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="{{ "/css/blog.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/blog.css" | prepend: site.baseurl }}" />
 
 	<!-- Pygments Github CSS -->
-	<link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}" />
 
 	<!-- Custom Fonts -->
-	<link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-		<script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-		<script src="http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+		<script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js" /></script>
+		<script src="http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js" /></script>
 	<![endif]-->
 
+	<!-- og/twitter/wechat meta -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@rpsh" />
+	<meta name="twitter:url" property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<meta name="twitter:title" property="og:title" itemprop="name" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}" />
+	<meta name="twitter:description" property="og:description" itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="twitter:image" property="og:image" itemprop="image" content="{{ site.url }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}assets/common/icon_wechat.png{% endif %}" />
+
+	<meta name="wxm:timeline_title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}" />
+	<meta name="wxm:appmessage_title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}" />
+	<meta name="wxm:appmessage_desc" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="wxm:img_url" content="{{ site.url }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}assets/common/icon_wechat.png{% endif %}" />
+	<meta name="wxm:link" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	
+	<!-- header banner -->
+	<style type="text/css">
+		header.intro-header{
+			background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+		}
+		@media (max-width:767px){
+			header.intro-header{
+				background-image: url('{{ site.baseurl }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}{{ site.header-img }}{% endif %}');
+			}
+			/*header.intro-header:before{
+				background-image: url('{{ site.baseurl }}/{% if page.thumb-img %}{{ page.thumb-img }}{% else %}{{ site.header-img }}{% endif %}');
+			}*/
+		}
+	</style>
 	<!-- ga & ba script hoook -->
 	<script></script>
 </head>
