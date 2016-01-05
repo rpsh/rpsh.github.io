@@ -47,16 +47,15 @@ tags:
 
 
 - 确认要迁移的设备与安全码，然后选择要迁移的内容，接下来就是静等文件迁移完成。
-
- ![move-to-new-mac-1](/assets/2016/01/move-to-new-mac-1.jpg)
-
- ![move-to-new-mac-2](/assets/2016/01/move-to-new-mac-2.jpg)
-
- ![move-to-new-mac-3](/assets/2016/01/move-to-new-mac-3.jpg)
+  
+  ![move-to-new-mac-1](http://note.rpsh.net/assets/2016/01/move-to-new-mac-1.jpg)
+  
+  ![move-to-new-mac-2](http://note.rpsh.net/assets/2016/01/move-to-new-mac-2.jpg)
+  
+  ![move-to-new-mac-3](http://note.rpsh.net/assets/2016/01/move-to-new-mac-3.jpg)
 
 
 
 参考资料：
 
 [将内容移至新 Mac](https://support.apple.com/zh-cn/HT204350)
-
