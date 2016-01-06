@@ -12,7 +12,7 @@ tags:
 ---
 在 Yosemite 中遇到类似这样下载失败的图标，按住 option 也不能删除掉
 
-![ghost-icon.png](/assets/2014/08/ghost-icon.png)
+![ghost-icon.png](http://note.rpsh.net/assets/2014/08/ghost-icon.png)
 
 
 删除方法：

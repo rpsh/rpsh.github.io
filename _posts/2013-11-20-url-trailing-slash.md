@@ -13,7 +13,7 @@ tags:
 如果可能，应尽量给 URL 的最后加上一个斜杠 /
 比如我们在浏览器里打开 `http://v.qq.com/tv` , 会先 301 重定向到 `http://v.qq.com/tv/` 然后才开始请求页面内容资源
 
-![url_slash.png](/assets/2013/11/url_slash.png)
+![url_slash.png](http://note.rpsh.net/assets/2013/11/url_slash.png)
 
 这样不仅白白耗费一次服务器请求响应，而且让页面响应时间慢了 146 毫秒 (以截图为例)。此外，不一致的 URL 也不利于 SEO。
 

@@ -17,4 +17,4 @@ tags:
 操作如下：
 系统设置－ 隐私－定位服务－系统服务 - Wifi网络，关掉。
 
-<img src="/assets/2015/04/iphone-wifi.png" alt="iphone-wifi.png" width="400">
+<img src="http://note.rpsh.net/assets/2015/04/iphone-wifi.png" alt="iphone-wifi.png" width="400">

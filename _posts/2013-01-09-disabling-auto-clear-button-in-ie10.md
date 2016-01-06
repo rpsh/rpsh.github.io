@@ -14,7 +14,7 @@ tags:
 ---
 
 
-![ie input clear](/assets/2013/01/ie10_clear_button.png)
+![ie input clear](http://note.rpsh.net/assets/2013/01/ie10_clear_button.png)
 
   
 IE10 除了默认交互控件的 UI 丑之外，还给 input 加了一个清除按钮，虽然看起来很有用的样子，实际情况中却有很多设计容不下它，所以我们前端就要隐藏掉这个东西，方法：  

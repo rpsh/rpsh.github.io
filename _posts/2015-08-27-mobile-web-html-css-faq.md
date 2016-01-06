@@ -14,7 +14,7 @@ tags:
 ---
 
 ## 问题：Android 上圆形图片使用 border 时，边框显示变形
-<img width="320px" src="/assets/2015/08/radius.png" alt="圆形图片边框变形">
+<img width="320px" src="http://note.rpsh.net/assets/2015/08/radius.png" alt="圆形图片边框变形">
 
 解决：给 img 外嵌套一个元素，为其使用圆角
 
@@ -36,7 +36,7 @@ img{
 ```
 
 ## 问题：Android 上圆角元素，背景颜色会溢出
-<img width="320px" src="/assets/2015/08/border-radius.png" alt="背景色溢出">
+<img width="320px" src="http://note.rpsh.net/assets/2015/08/border-radius.png" alt="背景色溢出">
 
 解决：
 
@@ -47,8 +47,8 @@ img{
 ```
 
 ## 问题： Android 上圆角使用 Animation 做 loading 动画时，圆角背景色溢出的bug
-<img width="320px" src="/assets/2015/08/radius-animation-1.gif" alt="圆角溢出">
-<img width="320px" src="/assets/2015/08/radius-animation-2.gif" alt="解决圆角溢出">
+<img width="320px" src="http://note.rpsh.net/assets/2015/08/radius-animation-1.gif" alt="圆角溢出">
+<img width="320px" src="http://note.rpsh.net/assets/2015/08/radius-animation-2.gif" alt="解决圆角溢出">
 
 解决：
 
@@ -86,7 +86,7 @@ img{
 ```
 
 ##  问题： :active 样式不生效
-<img width="320" src="/assets/2015/08/active.gif" alt="元素 active 样式">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/active.gif" alt="元素 active 样式">
 
 解决： 参考[这篇文章](http://note.rpsh.net/posts/2014/03/18/phone-touch-css-style-active)
 
@@ -96,7 +96,7 @@ document.addEventListener("touchstart", function() {},false);
 
 
 ## 问题： 多行文字超出截断需要出现省略号
-<img width="320" src="/assets/2015/08/ellipsis.png" alt="多行文本的超出隐藏省略号">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/ellipsis.png" alt="多行文本的超出隐藏省略号">
 
 解决： 参考[这篇文章](http://note.rpsh.net/posts/2014/10/14/css-multiple-line-overflow-ellipsis)
 
@@ -111,7 +111,7 @@ document.addEventListener("touchstart", function() {},false);
 ```
 
 ## 问题： 1px 线条、边框
-<img width="320" src="/assets/2015/08/1px_line.png" alt="1像素边框">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/1px_line.png" alt="1像素边框">
 
 解决：使用高度为 1px ，一半为实色，一半为透明的渐变背景实现
 
@@ -133,7 +133,7 @@ document.addEventListener("touchstart", function() {},false);
 
 
 ## 问题：滚动条滚动时没有像 iOS 原生那么顺滑流畅，滚动条没有 iOS 回弹效果
-<img width="320" src="/assets/2015/08/scroll-1.gif" alt="iOS 滚动条">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/scroll-1.gif" alt="iOS 滚动条">
 
 解决：
 
@@ -147,7 +147,7 @@ document.addEventListener("touchstart", function() {},false);
 
 
 ## 问题：当模块使用系统的横向滚动时，不想显示出系统的滚动条样式
-<img width="320" src="/assets/2015/08/scroll-2.gif" alt="隐藏滚动条">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/scroll-2.gif" alt="隐藏滚动条">
 
 解决：
 
@@ -185,7 +185,7 @@ iOS 要隐藏滚动条，会稍微复杂一些
 
 ## 问题：横向滚动的元素，滑动时有时图片显示不出来/文字显示不出来
 
-<img width="320" src="/assets/2015/08/scroll-3.gif" alt="滑动时元素不显示">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/scroll-3.gif" alt="滑动时元素不显示">
 
 解决：给每个横滑的元素块使用硬件加速
 
@@ -209,7 +209,7 @@ li{
 
 
 ## 问题：页面上数字自动变成了可以点击的链接
-<img width="320" src="/assets/2015/08/input_tel.gif" alt="数字变为链接">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/input_tel.gif" alt="数字变为链接">
 
 解决：在页面 `<head>` 里添加 
 
@@ -219,7 +219,7 @@ li{
 
 
 ## 问题：input 在 iOS 中圆角、内阴影去不掉
-<img width="320" src="/assets/2015/08/input.png" alt="去掉 input 的圆角与阴影">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/input.png" alt="去掉 input 的圆角与阴影">
 
 解决：
 
@@ -232,7 +232,7 @@ input{
 
 
 ## 问题：焦点在 input 时，placeholder 没有隐藏
-<img width="320" src="/assets/2015/08/placholder.gif" alt="focus 时隐藏 placholder">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/placholder.gif" alt="focus 时隐藏 placholder">
 
 解决：
 
@@ -252,14 +252,14 @@ input:focus::-webkit-input-placeholder{
 ```
 分别对应下图中的1、2、3。
 
-<img width="95%" src="/assets/2015/08/keyboard_number.png" alt="圆形图片边框变形">
+<img width="95%" src="http://note.rpsh.net/assets/2015/08/keyboard_number.png" alt="圆形图片边框变形">
 
 需要注意的是，单独使用 `type="number"` 时候， iOS 上出现并不是九宫格的数字键盘，如果需要九宫格的数字键盘，可选择使用 2、3 的方法。
 1、2、3 在 Android 上均可以唤起九宫格的数字键盘
 
 
 ## 问题：搜索时，键盘的回车按钮文字设定为“搜索”
-<img width="320" src="/assets/2015/08/form_search.png" alt="定义键盘回车文案为搜索">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/form_search.png" alt="定义键盘回车文案为搜索">
 
 解决： `input` 使用 `type="search"`，放在 `form` 表单内。两者结合就能使输入法中的回车按钮文字变为“搜索”
 
@@ -271,7 +271,7 @@ input:focus::-webkit-input-placeholder{
 
 
 ## 问题：iframe 在 iOS 上没有滚动条，直接撑出去
-<img width="320" src="/assets/2015/08/iframe.png" alt="iframe 撑出界面">
+<img width="320" src="http://note.rpsh.net/assets/2015/08/iframe.png" alt="iframe 撑出界面">
 
 解决：给 iframe 外嵌套一个 div， 为这个 div 设置固定高度与 `overflow`
 

@@ -15,7 +15,7 @@ tags:
 ---
 目前在 Web 上实现毛玻璃效果一般是通过一个大截屏图片的高斯模糊加上滚动位置的切换来[实现](http://www.zhihu.com/question/30502281)，而在 iOS9 和 OS X 10.11 的 Safari 原生支持了 CSS 的 `backdrop-filter` 来实时地生成一个毛玻璃效果的背景。
 
-<img src="/assets/2015/07/live-blur.gif" alt="live-blur.gif" />
+<img src="http://note.rpsh.net/assets/2015/07/live-blur.gif" alt="live-blur.gif" />
 
 
 
@@ -53,7 +53,7 @@ tags:
 
 最后放一个 demo：(iOS9、OS 10.11 Safari 可以体验)
 
-<img style="display:block;margin:auto;" src="/assets/2015/07/live-blur-qr.png" alt="live-blur-qr.png" width="200" height="200" />
+<img style="display:block;margin:auto;" src="http://note.rpsh.net/assets/2015/07/live-blur-qr.png" alt="live-blur-qr.png" width="200" height="200" />
 
 
 <iframe height="301" scrolling="no" src="//codepen.io/rpsh/embed/OVaYQV/?height=301&amp;theme-id=0&amp;default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;"></iframe>

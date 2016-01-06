@@ -12,7 +12,7 @@ tags:
 ---
 安装 [Synergy](http://synergy-project.org/) 后，就可以用一套键鼠控制局域网里的多台电脑，支持 Windows、Mac、Linux 多系统。
 
-![synergy-1.png](/assets/2014/09/synergy-1.png)
+![synergy-1.png](http://note.rpsh.net/assets/2014/09/synergy-1.png)
 
 
 
@@ -23,5 +23,5 @@ tags:
     3. 设置 ctrl -> Super; Super-> Ctrl
     4. 依次点击 Ok, Apply
 
-![synergy-2.png](/assets/2014/09/synergy-2.png)
+![synergy-2.png](http://note.rpsh.net/assets/2014/09/synergy-2.png)
 

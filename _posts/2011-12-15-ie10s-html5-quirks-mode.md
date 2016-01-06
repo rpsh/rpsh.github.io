@@ -26,7 +26,7 @@ tags:
 当然，我们伟大的微软，向来以周全考虑为己任为首要任务的微软，为了兼顾那些不规范的网页，又搞出了一个 IE5 兼容模式，以这个模式渲染的页面就是以往 IE 的怪异模式（工程师们你伤不起的啊）。  
   
 
-![IE5 模式](/assets/2011/12/HTML5QuirksModeinIE10.png)
+![IE5 模式](http://note.rpsh.net/assets/2011/12/HTML5QuirksModeinIE10.png)
 
   
 开启这个模式的代码是：  

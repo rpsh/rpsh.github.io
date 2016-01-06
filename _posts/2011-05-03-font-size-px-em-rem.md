@@ -18,7 +18,7 @@ tags:
   
 今天看了Jonathan Snook 的[文章][1]，才注意到，这个放大文字，是指浏览器自带的 文字大小 的调整功能，并不是放大整个页面，在ie中，调整文字的功能是这个：  
 
-![text-zoom.png](/assets/2011/05/text-zoom.png)
+![text-zoom.png](http://note.rpsh.net/assets/2011/05/text-zoom.png)
 
   
 OK，那么一切就明了了。 如果使用 px 作为字体大小的单位，那么在 ie 下边，当通过上述方法在浏览器中设置大字号的文字 并不能生效，即使在 ie9 中也不能。  

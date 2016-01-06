@@ -13,7 +13,7 @@ tags:
 ---
 更新 Chrome 到 37 后，发现很多网页的汉字都不显示了：
 
-![chrome-37-bug.png](/assets/2014/08/chrome-37-bug.png)
+![chrome-37-bug.png](http://note.rpsh.net/assets/2014/08/chrome-37-bug.png)
 
 
 解决办法：

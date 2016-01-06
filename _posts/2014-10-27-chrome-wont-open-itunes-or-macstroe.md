@@ -13,7 +13,7 @@ tags:
     - iTunes
 ---
 
-<img src="/assets/2014/10/open-itunes.jpg" alt="open-itunes.jpg" width="400">
+<img src="http://note.rpsh.net/assets/2014/10/open-itunes.jpg" alt="open-itunes.jpg" width="400">
 
 
 在 Chrome 里点 iTunes/Mac Appstore 里的打开链接，不能正确启动 iTunes/Mac AppStore，重新启用的方法是：

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "将旧 Mac 的内容完全迁移到新 Mac 上"
-description: "在网页上使用苹方字体。通过 CSS 定义网页中文字体为苹方： CSS font-family: PingFangSC-Regular。苹方提供了六个字种，简、繁、繁（港）三类，使用方法如文"
+description: "通过 Mac OSX 提供的「迁移助理」应用，通过网线将新旧两台 Mac 连接起来，就可以将就设备的文件内容完全迁移到新的 Mac 上，更换新设备也很轻松。"
 keyword: "迁移助理, Mac 文件迁移, Mac, OSX, "
 date: 2016-01-05 22:30
 comments: true
@@ -57,5 +57,4 @@ tags:
 
 
 参考资料：
-
 [将内容移至新 Mac](https://support.apple.com/zh-cn/HT204350)

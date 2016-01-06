@@ -16,7 +16,7 @@ tags:
 各个浏览器相同版本的 标准模式 和 准标准模式 之间差异极少。  
   
 
-![浏览器渲染模式差异](/assets/2011/04/browser_compat.png)
+![浏览器渲染模式差异](http://note.rpsh.net/assets/2011/04/browser_compat.png)
 via: [http://www.w3help.org/zh-cn/causes/readme.html][1] 
   
 `<!doctype html>`
@@ -26,7 +26,7 @@ via: [http://www.w3help.org/zh-cn/causes/readme.html][1] 
 HTML4.01 规范中提到，DTD签名或后面容许出现空白符，这里提到的“空白符”包括 空格符、换行符、制表符和注释。  
 实际情境中，在DTD前边前加入注释或其他内容，在某些浏览器中 DTD 将无法识别，从而进入怪异模式。  
   
-![文档声明](/assets/2011/04/DTD.png)
+![文档声明](http://note.rpsh.net/assets/2011/04/DTD.png)
 via: [http://www.w3help.org/zh-cn/causes/HG8001][2] 
   
 所以，**请确保 DTD 之前没有其他字符，即便有，也只能是 空格符、换行符和制表符。**  
@@ -37,7 +37,7 @@ via: [http://www.w3help.org/zh-cn/causes/HG8001][2] 
   
 而非ie浏览器，`clientWidth/clientHeight` 的计算方式在怪异模式跟标准模式相同。  
   
-![默认盒模型](/assets/2011/04/box_mode.png)
+![默认盒模型](http://note.rpsh.net/assets/2011/04/box_mode.png)
 
   
   
@@ -50,7 +50,7 @@ via: [http://www.w3help.org/zh-cn/causes/HG8001][2] 
   
 一些常见的 doctype 及会触发的模式  
 
-[![盒模型](/assets/2011/04/doctype.png)][3]
+[![盒模型](http://note.rpsh.net/assets/2011/04/doctype.png)][3]
 
   
   
@@ -62,6 +62,6 @@ via: [http://www.w3help.org/zh-cn/causes/HG8001][2] 
 
 [1]: http://www.w3help.org/zh-cn/causes/readme.html
 [2]: http://www.w3help.org/zh-cn/causes/HG8001
-[3]: /assets/2011/04/doctype.png
+[3]: http://note.rpsh.net/assets/2011/04/doctype.png
 [4]: http://www.w3help.org/zh-cn/kb/001
 [5]: http://msdn.microsoft.com/en-us/library/bb250395.aspx

@@ -33,7 +33,7 @@ Mac OS X 10.9 依旧预装了 Apache ，但是已经不能在 「系统偏好设
 
 浏览器打开 http://127.0.0.1 可以看到 **It works!** 的页面
 
-![Apache Works](/assets/2013/11/itworks.png)
+![Apache Works](http://note.rpsh.net/assets/2013/11/itworks.png)
 
 
 ### 文件根目录
@@ -69,7 +69,7 @@ IndexOptions Charset=UTF-8
 
 另一个 Web 根目录默认是 `~/Sites` ，10.9 中你需要手动创建这个`Sites`目录。
 
-![image](/assets/2013/11/sites-user-folder-osx-mavericks.png)
+![image](http://note.rpsh.net/assets/2013/11/sites-user-folder-osx-mavericks.png)
 
 检查这个目录下是否有 `username.conf` 文件
 
@@ -163,7 +163,7 @@ php.ini 文件位置：
 
 OS X 10.9 需要单独安装 MySQL，[下载地址](http://dev.mysql.com/downloads/mysql/) ，选择 _Mac OS X ver. 10.7 (x86, 64-bit), DMG Archive_ 。（下载无需注册，点击下边小字部分的「_ No thanks, just take me to the downloads!_」即可）
 
-![MySQL 安装](/assets/2013/11/mysql-install-osx-mavericks.png)
+![MySQL 安装](http://note.rpsh.net/assets/2013/11/mysql-install-osx-mavericks.png)
 
 三个文件都需要安装。其中第二个会在「系统偏好设置」中添加一个 MySQL 设置项：开机自动启动、启动／关闭 MySQL
 

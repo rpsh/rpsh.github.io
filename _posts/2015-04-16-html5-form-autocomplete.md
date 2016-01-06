@@ -14,7 +14,7 @@ tags:
 ---
 使用 `autocomplete` 属性可以为表单提供自动填表能力：
 
-<img src="/assets/2015/04/autocomplete.png" alt="autocomplete.png" />
+<img src="http://note.rpsh.net/assets/2015/04/autocomplete.png" alt="autocomplete.png" />
 
 
 

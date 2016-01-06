@@ -19,7 +19,7 @@ tags:
 
 （进入「清理微信存储空间」页面无需任何操作，当点击进入这个页面的时候，微信已经执行了清理缓存的操作）
 
-![微信 webview 清理缓存方法](/assets/2014/04/weixin-cache.jpg)
+![微信 webview 清理缓存方法](http://note.rpsh.net/assets/2014/04/weixin-cache.jpg)
 
 
 
@@ -29,4 +29,4 @@ tags:
 
 打开这个网址，找到清理缓存，点击即可。
 
- ![x5 清除缓存](/assets/2014/04/x5-clear-cache.jpg)
+ ![x5 清除缓存](http://note.rpsh.net/assets/2014/04/x5-clear-cache.jpg)

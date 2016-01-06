@@ -17,15 +17,15 @@ tags:
 
 1、通过 Lightning to USB 线([?](http://www.apple.com/cn/shop/product/MD818FE/A/lightning-to-usb-cable "Lightning to USB 连接线是什么"))将 iPhone/iPad 与 Mac 相连接
 
-<img src="/assets/2014/10/lightning-usb-cable.jpg" alt="lightning-usb-cable.jpg" width="500">
+<img src="http://note.rpsh.net/assets/2014/10/lightning-usb-cable.jpg" alt="lightning-usb-cable.jpg" width="500">
 
 2、打开 QuickTime， 文件 -> 新建影片录制
 
-<img src="/assets/2014/10/quicktime-new-recorder.png" alt="quicktime-new-recorder.png" width="500">
+<img src="http://note.rpsh.net/assets/2014/10/quicktime-new-recorder.png" alt="quicktime-new-recorder.png" width="500">
 
 3、录制来源选择 iPhone
 
-<img src="/assets/2014/10/quicktime-source-select.png" alt="quicktime-source-select.png" width="320">
+<img src="http://note.rpsh.net/assets/2014/10/quicktime-source-select.png" alt="quicktime-source-select.png" width="320">
 
 
 4、开始录制吧

@@ -21,7 +21,7 @@ tags:
 作用：禁用 IE6 的 Smart Tags 功能。  
 详解：微软在 IE6 Beta 版和 Word 2010 中引入了一个功能：[Smart Tags][1]，自动给一些「标签」词语加上带下划线样式的链接，鼠标hover时候可以使用预定义的一些程序的功能：  
 
-![Smart Tags](/assets/2013/01/Smarttags.png)
+![Smart Tags](http://note.rpsh.net/assets/2013/01/Smarttags.png)
 
 （图片来自 [wikipedia][3]）
 
@@ -39,7 +39,7 @@ tags:
 作用：禁用 IE6 中的图片快速保存工具条  
 详解：又是 IE6 中的一个特性，鼠标 hover 到一个尺寸大于200x200的图片上会出现一个快速功能操作工具条，提供注入保存、打印、发送邮件等功能。此特性[只有 IE6 支持][6]。 
 
-![ie6 image toolbar](/assets/2013/01/image-toolbar-example.jpg)
+![ie6 image toolbar](http://note.rpsh.net/assets/2013/01/image-toolbar-example.jpg)
 
 
 图片来自 [ma.tt][9]

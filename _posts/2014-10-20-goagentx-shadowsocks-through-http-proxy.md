@@ -20,16 +20,16 @@ tags:
 
 1、在 Proxifier 里添加 HTTPS 代理
 
-![Proxifier-http-proxy.png](/assets/2014/10/Proxifier-http-proxy.png)
+![Proxifier-http-proxy.png](http://note.rpsh.net/assets/2014/10/Proxifier-http-proxy.png)
 
-![Proxifier-add-proxy.png](/assets/2014/10/Proxifier-add-proxy.png)
+![Proxifier-add-proxy.png](http://note.rpsh.net/assets/2014/10/Proxifier-add-proxy.png)
 
 
 
 2、Rules 添加 GoAgentX 通过代理。  `GoAgentX;ss-local`
-![Proxifier-add-rule.png](/assets/2014/10/Proxifier-add-rule.png)
+![Proxifier-add-rule.png](http://note.rpsh.net/assets/2014/10/Proxifier-add-rule.png)
 
-![Proxifier-goagentx.png](/assets/2014/10/Proxifier-goagentx.png)
+![Proxifier-goagentx.png](http://note.rpsh.net/assets/2014/10/Proxifier-goagentx.png)
 
 
 

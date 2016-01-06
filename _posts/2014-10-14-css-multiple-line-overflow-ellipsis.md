@@ -37,7 +37,7 @@ text-overflow: ellipsis;
 
 多行省略号用在 a 链接中时会有一个bug，省略号出现在文字中间：
 
-![链接中多行省略号bug](/assets/2014/10/ellipsis_in_link.jpeg)
+![链接中多行省略号bug](http://note.rpsh.net/assets/2014/10/ellipsis_in_link.jpeg)
 
 
 

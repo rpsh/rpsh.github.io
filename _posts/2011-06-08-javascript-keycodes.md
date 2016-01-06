@@ -13,7 +13,7 @@ tags:
     - Keyboard
 ---
 
-![键盘](/assets/2011/05/keycodes.png)
+![键盘](http://note.rpsh.net/assets/2011/05/keycodes.png)
 via：[http://shikargar.wordpress.com/2010/10/27/javascript-key-codes/][1] 
 
 

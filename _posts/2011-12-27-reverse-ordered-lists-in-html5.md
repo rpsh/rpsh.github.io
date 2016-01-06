@@ -32,7 +32,7 @@ tags:
 		  
 显示效果：  
 
-![列表项序号](/assets/2011/12/start-list.jpg)
+![列表项序号](http://note.rpsh.net/assets/2011/12/start-list.jpg)
 
   
   
@@ -68,7 +68,7 @@ tags:
 
 理想的显示效果：  
 
-![倒序列表项序号](/assets/2011/12/reversed-list.jpg)
+![倒序列表项序号](http://note.rpsh.net/assets/2011/12/reversed-list.jpg)
 
   
 可惜， reversed 目前还不被任何浏览器所[支持][4]。  
