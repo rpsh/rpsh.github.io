@@ -56,6 +56,8 @@ ffmpeg -i big.mov -vf scale=360:-1  small.mov
 
 注意 `sacle` 值必须是偶数，这里的 `-1` 表示保持长宽比，根据宽度值自适应高度。
 
+如果要求压缩出来的视频尺寸长宽都保持为偶数，可以使用 `-2`
+
 ### 加倍速播放视频
 
 ``` 
@@ -116,6 +118,20 @@ convert 'animation.gif[0]' animation-first-frame.gif
 
 
 
+## GIF 转出来的 MP4 播放不了？
+
+有些 GIF 转化出来的 MP4 不能被 Mac QuickTime Player.app 播放，需要添加 `pixel formal` 参数
+
+``` 
+ffmpeg -i input.gif -vf scale=420:-2,format=yuv420p out.mp4
+```
+
+使用 `yunv420p` 需要保证长宽为偶数，这里同时使用了 `scale=420:-2` 。
+
+[wiki 解释](https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers)： QuickTime Player 对 H.264 视频只支持 YUV 色域 4:2:0 方式的二次插值算法。
+
+
+
 参考资料
 
 * [FFmpeg CompilationGuide/MacOSX](https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX)
@@ -124,4 +140,4 @@ convert 'animation.gif[0]' animation-first-frame.gif
 * [Create an Image Preview from a Video](http://davidwalsh.name/create-image-preview-video)
 * [How to speed up / slow down a video](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video)
 * [ffmpeg useful commands (FFMPEG 命令大全）](http://siwei.me/blog/posts/ffmpeg-useful-commands) 
-* [ffmpeg 文档](http://siwei.me/blog/posts/ffmpeg-useful-commands) 
+* [ffmpeg 文档](http://siwei.me/blog/posts/ffmpeg-useful-commands)
