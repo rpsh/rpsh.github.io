@@ -21,7 +21,7 @@ sudo vi /etc/apache2/users/username.config
 ```
 添加 `Require all granted`
 
-```apache
+```conf
 <Directory "/Users/username/Sites/">
 Options Indexes MultiViews FollowSymLinks
 AllowOverride All
@@ -33,12 +33,12 @@ Require all granted
 
 编辑 `/etc/apache2/httpd.conf` 文件，删除下列这些代码前的注释符号： `#`
 
-```apache
+```conf
 Include /private/etc/apache2/extra/httpd-userdir.conf
 ```
 
 
-```apache
+```conf
 LoadModule authz_core_module libexec/apache2/mod_authz_core.so
 LoadModule authz_host_module libexec/apache2/mod_authz_host.so
 LoadModule userdir_module libexec/apache2/mod_userdir.so
@@ -46,7 +46,7 @@ LoadModule userdir_module libexec/apache2/mod_userdir.so
 
 编辑 `/etc/apache2/extra/httpd-userdir.conf` 文件，删除下列这些代码前的注释符号： `#`
 
-```apache
+```conf
 Include /private/etc/apache2/users/*.conf
 ```
 

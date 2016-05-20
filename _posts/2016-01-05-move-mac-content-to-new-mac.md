@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "将旧 Mac 的内容完全迁移到新 Mac 上"
-description: "通过 Mac OSX 提供的「迁移助理」应用，通过网线将新旧两台 Mac 连接起来，就可以将就设备的文件内容完全迁移到新的 Mac 上，自此更换新设备也能轻松无缝切换。"
+description: "通过 Mac OSX 提供的「迁移助理」应用，通过网线将新旧两台 Mac 连接起来，就可以将就设备的文件内容完全迁移到新的 Mac 上，自此更换新设备也能轻松无缝切换"
 keyword: "迁移助理, Mac 文件迁移, Mac, OSX, "
 date: 2016-01-05 22:30
 comments: true
