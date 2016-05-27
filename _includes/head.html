@@ -9,6 +9,8 @@
 	<title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="keyword"  content="{% if page.keyword %}{{ page.keyword }}, {% endif %}{{ site.keyword }}" />
+
+	<meta http-equiv="Content-Security-Policy" content="default-src *; frame-src 'self'; script-src 'self' '*.google-analytics.com' 'cdn.bootcss.com' 'disqus.com' '*.disqus.com' unsafe-inline' 'unsafe-eval'">
 	
 	{% if site.google-plus-id %}<link rel="author" href="https://plus.google.com/{{ site.google-plus-id }}/posts" />{% endif %}
 	
