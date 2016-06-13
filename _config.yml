@@ -28,7 +28,7 @@ google-plus-id: "100791036880126418228"
 
 
 # Build settings
-highlighter: pygments
+highlighter: rouge
 #permalink: pretty
 permalink: /posts/:year/:month/:day/:title/
 paginate: 10
