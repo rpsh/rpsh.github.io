@@ -41,7 +41,7 @@ anchorjs: true                          # if you want to customize anchor. check
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: redcarpet
+# markdown: redcarpet
 #kramdown:
 #  input: GFM                            # use Github Flavored Markdown !important
 
@@ -59,6 +59,7 @@ disqus_username: rpsh
 #sitemap
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Analytics settings
 # Baidu Analytics
@@ -99,12 +100,6 @@ search: true 							# whether or not using Search
 search-engine: google 					# google or baidu
 search-placeholder: '善用搜索..'			# placeholder of search input
 
-
-
-# Site Search 
-search: true                            # whether or not using Search
-search-engine: google                   # google or baidu
-search-placeholder: '善用搜索..'         # placeholder of search input
 
 # Custom Search
 # Get google custom search id->  http://cse.google.com
